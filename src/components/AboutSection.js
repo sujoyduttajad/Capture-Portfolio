@@ -10,11 +10,18 @@ const About = styled.div`
     padding: 5rem 10rem;
     color: white;
 `;
+const Description = styled.div`
+    flex: 1;
+    padding-right: 5rem;
+    h2 {
+        font-weight: lighter;
+    }
+`; 
 
 const AboutSection = () => {
   return (
     <About>
-        <div className='description'>
+        <Description>
             <div className='title'>
                 <div className='hide'>
                     <h2>We work to make</h2>
@@ -31,7 +38,7 @@ const AboutSection = () => {
                 have professionals with amazing skills. 
             </p>
             <button>Contact Us</button>
-        </div>
+        </Description>
         <div className='image'>
             <img src={home1} alt="guy with a camera" />
         </div>
