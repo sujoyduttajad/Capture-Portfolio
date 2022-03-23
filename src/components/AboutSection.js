@@ -17,6 +17,14 @@ const Description = styled.div`
         font-weight: lighter;
     }
 `; 
+const ImageContainer = styled.div`
+    flex: 1;
+    img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+`
 
 const AboutSection = () => {
   return (
@@ -39,9 +47,9 @@ const AboutSection = () => {
             </p>
             <button>Contact Us</button>
         </Description>
-        <div className='image'>
+        <ImageContainer>
             <img src={home1} alt="guy with a camera" />
-        </div>
+        </ImageContainer>
     </About>
   )
 }
