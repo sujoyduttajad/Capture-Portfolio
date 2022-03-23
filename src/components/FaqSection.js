@@ -11,6 +11,12 @@ const FAQ = styled(Layout)`
         padding-bottom: 2rem;
         font-weight: lighter;
     }
+    .faq-line {
+        background-color: #ccc;
+        height: 0.2rem;
+        margin: 2rem 0;
+        width: 100%;
+    }
 `;
 
 const FaqSection = () => {
