@@ -14,7 +14,7 @@ const FAQ = styled(Layout)`
     .faq-line {
         background-color: #ccc;
         height: 0.2rem;
-        margin: 2rem 0;
+        /* margin: 2rem 0; */
         width: 100%;
     }
     .question {
