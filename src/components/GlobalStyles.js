@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 const GlobalStyles = createGlobalStyle`
     *{
         margin: 0;
@@ -23,6 +22,18 @@ const GlobalStyles = createGlobalStyle`
             background-color: #23d997;
             color: white;
         }
+    }
+    h2 {
+        font-weight: lighter;
+        font-size: 4rem;
+    }
+    h3 {
+        color: white;
+    }
+    p {
+        padding: 3rem 0rem;
+        color: #ccc;
+        font-size: 1.4rem;
     }
 `;
 
