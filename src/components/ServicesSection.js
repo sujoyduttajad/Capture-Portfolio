@@ -5,12 +5,13 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
+import { Layout, Description, ImageContainer, Hide } from '../styles'
 
 
 const ServicesSection = () => {
   return (
-    <div className='services'>
-        <div className='description'>
+    <Layout>
+        <Description>
             <h2>High <span>quality</span> services</h2>
             <div className='cards'>
                 <div className='card'>
@@ -42,11 +43,11 @@ const ServicesSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </div>
+        </Description>
         <div className='image'>
             <img src={home2} alt="" />
         </div>
-    </div>
+    </Layout>
   )
 }
 
