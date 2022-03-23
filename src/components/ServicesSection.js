@@ -21,6 +21,19 @@ const Cards = styled.div`
     display: flex;
     flex-wrap: wrap;
 `;
+const Card = styled.div`
+    flex-basis: 20rem;
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+    h3 {
+        margin-left: 1rem;
+        background: white;
+        color: #333;
+        padding: 1rem;
+    }
+`
 
 const ServicesSection = () => {
   return (
@@ -28,34 +41,34 @@ const ServicesSection = () => {
         <Description>
             <h2>High <span>quality</span> services</h2>
             <Cards className='cards'>
-                <div className='card'>
+                <Card className='card'>
                     <div className='icon'>
                         <img src={clock} alt="icon"/>
                         <h3>Efficient</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div className='card'>
+                </Card>
+                <Card className='card'>
                     <div className='icon'>
                         <img src={teamwork} alt="icon"/>
                         <h3>Teamwork</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div className='card'>
+                </Card>
+                <Card className='card'>
                     <div className='icon'>
                         <img src={diaphragm} alt="icon"/>
                         <h3>Diaphragm</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div className='card'>
+                </Card>
+                <Card className='card'>
                     <div className='icon'>
                         <img src={money} alt="icon"/>
                         <h3>Affordable</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+                </Card>
             </Cards>
         </Description>
         <div className='image'>
