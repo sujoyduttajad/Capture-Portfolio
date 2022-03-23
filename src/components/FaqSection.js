@@ -17,6 +17,16 @@ const FAQ = styled(Layout)`
         margin: 2rem 0;
         width: 100%;
     }
+    .question {
+        padding: 3rem 0;
+        cursor: pointer;
+    }
+    .answer {
+        padding: 2rem 0;
+        p {
+            padding: 1rem 0;
+        }
+    }
 `;
 
 const FaqSection = () => {
@@ -29,6 +39,7 @@ const FaqSection = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, dolor.</p>
             </div>
+            <div className='faq-line'></div>
         </div>
         <div className='question'>
             <h4>Daily Schedule</h4>
@@ -36,6 +47,7 @@ const FaqSection = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, dolor.</p>
             </div>
+            <div className='faq-line'></div>
         </div>
         <div className='question'>
             <h4>Different Payment Methods</h4>
@@ -43,6 +55,7 @@ const FaqSection = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, dolor.</p>
             </div>
+            <div className='faq-line'></div>
         </div>
         <div className='question'>
             <h4>What products do you offer?</h4>
@@ -50,6 +63,7 @@ const FaqSection = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, dolor.</p>
             </div>
+            <div className='faq-line'></div>
         </div>
     </FAQ>
   )
