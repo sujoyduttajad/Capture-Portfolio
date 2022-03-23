@@ -1,12 +1,12 @@
 import React from 'react'
 import home1 from "../img/home1.png";
 import styled from 'styled-components'
-import { About, Description, ImageContainer, Hide } from '../styles'
+import { Layout, Description, ImageContainer, Hide } from '../styles'
 
 
 const AboutSection = () => {
   return (
-    <About>
+    <Layout>
         <Description>
             <div className='title'>
                 <Hide>
@@ -28,7 +28,7 @@ const AboutSection = () => {
         <ImageContainer>
             <img src={home1} alt="guy with a camera" />
         </ImageContainer>
-    </About>
+    </Layout>
   )
 }
 
