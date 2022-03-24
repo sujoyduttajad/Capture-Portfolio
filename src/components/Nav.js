@@ -8,16 +8,30 @@ const Navbar = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
+    background: #282828;
     a {
         color: white;
         text-decoration: none;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    #logo {
+        font-size: 1.8rem;
+        font-family: "Lobster", cursive;
+        font-weight: lighter;
+    }
+    li {
+        padding-left: 2rem;
+        position: relative;
     }
 `;
 
 const Nav = () => {
   return (
     <Navbar>
-        <h1><a href='#'>Capture</a></h1>
+        <h1><a id='logo' href='#'>Capture</a></h1>
         <ul>
             <li>
                 <a href='#'>About Us</a>
