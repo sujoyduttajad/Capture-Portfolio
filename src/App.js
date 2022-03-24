@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Nav from "./components/Nav";
@@ -12,15 +13,17 @@ function App() {
     <div>
       <GlobalStyles />
       <Nav />
-      <Route path="/">
-        <AboutUs />
-      </Route>
-      <Route path="/work">
-        <OurWork /> 
-      </Route>
-      <Route path="/contact">
-        <ContactUs />
-      </Route>
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+        <Route path="/work">
+          <OurWork /> 
+        </Route>
+        <Route path="/contact">
+          <ContactUs />
+        </Route>
+      </Switch>
     </div>
   );
 }
