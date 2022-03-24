@@ -6,6 +6,12 @@ const Navbar = styled.nav`
     display: flex;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    a {
+        color: white;
+        text-decoration: none;
+    }
 `;
 
 const Nav = () => {
