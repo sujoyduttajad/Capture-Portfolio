@@ -32,7 +32,7 @@ const Navbar = styled.nav`
 const Nav = () => {
   return (
     <Navbar>
-        <h1><Link id='logo' to='#'>Capture</Link></h1>
+        <h1><Link id='logo' to='/'>Capture</Link></h1>
         <ul>
             <li>
                 <Link to='/'>About Us</Link>
