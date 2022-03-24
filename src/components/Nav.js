@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const Navbar = styled.nav`
@@ -31,16 +32,16 @@ const Navbar = styled.nav`
 const Nav = () => {
   return (
     <Navbar>
-        <h1><a id='logo' href='#'>Capture</a></h1>
+        <h1><Link id='logo' to='#'>Capture</Link></h1>
         <ul>
             <li>
-                <a href='/'>About Us</a>
+                <Link to='/'>About Us</Link>
             </li>
             <li>
-                <a href='/work'>Our Work</a>
+                <Link to='/work'>Our Work</Link>
             </li>
             <li>
-                <a href='/contact'>Contact Us</a>
+                <Link to='/contact'>Contact Us</Link>
             </li>
         </ul>
     </Navbar>
