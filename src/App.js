@@ -16,10 +16,10 @@ function App() {
         <AboutUs />
       </Route>
       <Route path="/work">
-        <ContactUs />
+        <OurWork /> 
       </Route>
       <Route path="/contact">
-        <OurWork />
+        <ContactUs />
       </Route>
     </div>
   );
