@@ -8,6 +8,11 @@ import goodtimes from "../img/goodtimes-small.png";
 
 const Work = styled.div`
   min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 10rem;
+  h2 {
+    padding: 1rem 0;
+  }
 `;
 const Movie = styled.div`
   padding-bottom: 10rem;
