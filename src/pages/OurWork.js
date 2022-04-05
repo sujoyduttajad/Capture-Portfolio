@@ -9,10 +9,20 @@ import goodtimes from "../img/goodtimes-small.png";
 const Work = styled.div`
   min-height: 100vh;
 `;
+const Movie = styled.div`
+  padding-bottom: 10rem;
+`;
+
 const OurWork = () => {
   return (
     <Work>
-      <h1>OurWork</h1>
+      <Movie>
+        <h2>The Athlete</h2>
+        <div className="line"></div>
+        <Link>
+          <img src={athlete} alt='' />
+        </Link>
+      </Movie>
     </Work>
   );
 };
