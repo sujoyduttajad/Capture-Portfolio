@@ -16,6 +16,16 @@ const Work = styled.div`
 `;
 const Movie = styled.div`
   padding-bottom: 10rem;
+  .line {
+    height: 0.5rem;
+    background-color: #ccc;
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
 `;
 
 const OurWork = () => {
