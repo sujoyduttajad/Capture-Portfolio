@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 // Import pages down here
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactUs />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail/>
         </Route>
       </Switch>
     </div>
