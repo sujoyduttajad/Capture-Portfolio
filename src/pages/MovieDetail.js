@@ -24,13 +24,22 @@ const Headline = styled.div`
   }
 `;
 const Awards = styled.div``;
-const Award = styled.div``;
 
+// Award Component
+const Award = () => {
+  return (
+    <div>
+      <h3>Title</h3>
+      <div className="line"></div>
+      <p>description</p>
+    </div>
+  );
+};
 
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  console.log(url)
+  console.log(url);
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
@@ -43,17 +52,15 @@ const MovieDetail = () => {
     <Details>
       {movie ? (
         <div>
-        <Headline>
-          <h2>{movie.title}</h2>
-          <img src={movie.mainImg} alt="movie" />
-        </Headline>
-        <Awards>
-          {
-            movie.awards.map((award) => (
-              <Award/>
-            ))
-          }
-        </Awards>
+          <Headline>
+            <h2>{movie.title}</h2>
+            <img src={movie.mainImg} alt="movie" />
+          </Headline>
+          <Awards>
+            {movie.awards.map((award) => (
+              <Award />
+            ))}
+          </Awards>
         </div>
       ) : (
         <h3>Sorry the movie you are looking is not available</h3>
