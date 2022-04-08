@@ -10,13 +10,13 @@ const Headline = styled.div``;
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-
+  console.log(url)
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-    setMovie(currentMovie);
+    setMovie(currentMovie[0]);
   }, [movies, url]);
 
   return (
