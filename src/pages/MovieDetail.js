@@ -17,7 +17,15 @@ const Headline = styled.div`
     left: 50%;
     transform: translate(-50%, -10%);
   }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
 `;
+const Awards = styled.div``;
+const Award = styled.div``;
+
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -34,10 +42,19 @@ const MovieDetail = () => {
   return (
     <Details>
       {movie ? (
+        <div>
         <Headline>
           <h2>{movie.title}</h2>
           <img src={movie.mainImg} alt="movie" />
         </Headline>
+        <Awards>
+          {
+            movie.awards.map((award) => (
+              <Award/>
+            ))
+          }
+        </Awards>
+        </div>
       ) : (
         <h3>Sorry the movie you are looking is not available</h3>
       )}
