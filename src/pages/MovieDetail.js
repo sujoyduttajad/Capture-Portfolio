@@ -23,16 +23,29 @@ const Headline = styled.div`
     object-fit: cover;
   }
 `;
-const Awards = styled.div``;
+const Awards = styled.div`
+  min-height: 80vh;
+  display: flex;
+  margin: 5rem 10rem;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const AwardStyle = styled.div`
+  padding: 5rem;
+  h3 {
+    font-size: 2rem;
+  }
+`
 
 // Award Component
 const Award = ({ title, description }) => {
   return (
-    <div>
+    <AwardStyle>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </div>
+    </AwardStyle>
   );
 };
 
