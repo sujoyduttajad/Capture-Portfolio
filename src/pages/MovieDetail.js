@@ -47,6 +47,15 @@ const AwardStyle = styled.div`
   }
 `;
 
+const ImageDisplay = styled.div`
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+`;
+
 // Award Component
 const Award = ({ title, description }) => {
   return (
@@ -87,6 +96,9 @@ const MovieDetail = () => {
               />
             ))}
           </Awards>
+          <ImageDisplay>
+            <img src={movie.secondaryImg} alt="movie" />
+          </ImageDisplay>
         </div>
       ) : (
         <h3>Sorry the movie you are looking is not available</h3>
