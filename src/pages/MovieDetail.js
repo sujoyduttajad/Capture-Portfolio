@@ -26,12 +26,12 @@ const Headline = styled.div`
 const Awards = styled.div``;
 
 // Award Component
-const Award = () => {
+const Award = ({ title, description }) => {
   return (
     <div>
-      <h3>Title</h3>
+      <h3>{title}</h3>
       <div className="line"></div>
-      <p>description</p>
+      <p>{description}</p>
     </div>
   );
 };
