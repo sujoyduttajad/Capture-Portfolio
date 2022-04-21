@@ -58,7 +58,11 @@ const MovieDetail = () => {
           </Headline>
           <Awards>
             {movie.awards.map((award) => (
-              <Award />
+              <Award
+                key={award.title}
+                title={award.title}
+                description={award.description}
+              />
             ))}
           </Awards>
         </div>
