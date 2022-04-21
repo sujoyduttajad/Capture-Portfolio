@@ -36,7 +36,16 @@ const AwardStyle = styled.div`
   h3 {
     font-size: 2rem;
   }
-`
+  .line{
+    width: 100%;
+    background: #23d997;
+    height: 0.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    padding: 2rem 0;
+  }
+`;
 
 // Award Component
 const Award = ({ title, description }) => {
