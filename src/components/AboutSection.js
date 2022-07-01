@@ -7,21 +7,30 @@ const AboutSection = () => {
   // Framer-motion variant
   const titleAnimation = {
     hidden: { opacity: 0 },
-    show: {opacity: 1, transition: { duration: 2 }}
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
+  const container = {
+    hidden: { x: 100 },
+    show: { x: 0, transition: { duration: 0.75, ease: "easeOut" } },
   };
 
   return (
     <Layout>
       <Description>
-        <div className="title">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="title"
+        >
           <Hide>
             <h2>We work to make</h2>
           </Hide>
           <Hide>
             <motion.h2
-                variants={titleAnimation}
-                initial="hidden"
-                animate="show"
+              variants={titleAnimation}
+              initial="hidden"
+              animate="show"
             >
               your <span>dreams</span> come
             </motion.h2>
@@ -29,7 +38,7 @@ const AboutSection = () => {
           <Hide>
             <h2>true.</h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
