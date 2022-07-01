@@ -4,6 +4,12 @@ import { Layout, Description, ImageContainer, Hide } from "../styles";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
+  // Framer-motion variant
+  const titleAnimation = {
+    hidden: { opacity: 0 },
+    show: {opacity: 1, transition: { duration: 2 }}
+  };
+
   return (
     <Layout>
       <Description>
@@ -12,9 +18,10 @@ const AboutSection = () => {
             <h2>We work to make</h2>
           </Hide>
           <Hide>
-            <motion.h2 
-                animate={{ opacity: 1, transition: {duration: 2} }}
-                initial={{ opacity: 0 }}
+            <motion.h2
+                variants={titleAnimation}
+                initial="hidden"
+                animate="show"
             >
               your <span>dreams</span> come
             </motion.h2>
