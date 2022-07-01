@@ -11,7 +11,15 @@ const AboutSection = () => {
   };
   const container = {
     hidden: { x: 100 },
-    show: { x: 0, transition: { duration: 0.75, ease: "easeOut", staggerChildren: 0.8 } },
+    show: {
+      x: 0,
+      transition: {
+        duration: 0.75,
+        ease: "easeOut",
+        staggerChildren: 0.8,
+        when: "afterChildren",
+      },
+    },
   };
 
   return (
