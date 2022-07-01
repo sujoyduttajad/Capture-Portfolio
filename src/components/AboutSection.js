@@ -11,7 +11,7 @@ const AboutSection = () => {
   };
   const container = {
     hidden: { x: 100 },
-    show: { x: 0, transition: { duration: 0.75, ease: "easeOut" } },
+    show: { x: 0, transition: { duration: 0.75, ease: "easeOut", staggerChildren: 0.8 } },
   };
 
   return (
@@ -24,19 +24,15 @@ const AboutSection = () => {
           className="title"
         >
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2
-              variants={titleAnimation}
-              initial="hidden"
-              animate="show"
-            >
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
-            <h2>true.</h2>
+            <motion.h2 variants={titleAnimation}>true.</motion.h2>
           </Hide>
         </motion.div>
         <p>
