@@ -46,7 +46,15 @@ const Frame1 = styled(motion.div)`
   background-color: #fffebf;
   z-index: 2;
 `;
-// const Frame1 = styled(motion.div)``;
+const Frame2 = styled(Frame1)`
+  background-color: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background-color: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background-color: #8effa0;
+`;
 
 const OurWork = () => {
   return (
