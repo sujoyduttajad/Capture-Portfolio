@@ -12,6 +12,8 @@ import {
   photoAnimation,
   fade,
   lineAnimation,
+  slider,
+  sliderContainer,
 } from "../animation";
 
 const Work = styled(motion.div)`
@@ -65,10 +67,12 @@ const OurWork = () => {
       exit="exit"
       style={{ backgroundColor: "#FCFCFC" }}
     >
-      <Frame1></Frame1>
-      <Frame2></Frame2>
-      <Frame3></Frame3>
-      <Frame4></Frame4>
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}> </Frame4>
+      </motion.div>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
