@@ -7,7 +7,12 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation, photoAnimation, fade } from "../animation";
+import {
+  pageAnimation,
+  photoAnimation,
+  fade,
+  lineAnimation,
+} from "../animation";
 
 const Work = styled(motion.div)`
   min-height: 100vh;
@@ -42,7 +47,7 @@ const OurWork = () => {
     >
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
-        <motion.div className="line"></motion.div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link className="non-styled-link" to="/work/the-athlete">
           <motion.img variants={photoAnimation} src={athlete} alt="athlete" />
         </Link>
