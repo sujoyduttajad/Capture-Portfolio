@@ -66,6 +66,9 @@ const OurWork = () => {
       style={{ backgroundColor: "#FCFCFC" }}
     >
       <Frame1></Frame1>
+      <Frame2></Frame2>
+      <Frame3></Frame3>
+      <Frame4></Frame4>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
