@@ -26,30 +26,13 @@ code {
   border: transparent;
 }
 
-.styled-links {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 0;
-  position: relative;
-  white-space: nowrap;
-  border: none;
-  color: inherit;
+.non-styled-link {
   text-decoration: none !important;
 }
-.styled-links::after {
-  background-color: #23d997 !important;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease 0s;
-  width: 60%;
-  height: 2px;
+.non-styled-link::after {
+  background-color: transparent;
+  transform: none;
 }
-.styled-links:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.non-styled-link:hover::after {
+  transform: none;
 }
