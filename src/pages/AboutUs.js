@@ -12,6 +12,7 @@ const AboutUs = () => {
       variants={pageAnimation} 
       initial="hidden" 
       animate="show"
+      exit="exit"
     >
       <AboutSection />
       <ServicesSection />
