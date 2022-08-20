@@ -17,11 +17,13 @@ export const Description = styled.div`
 `; 
 export const ImageContainer = styled.div`
     flex: 1;
+    z-index: 2;
     overflow: hidden;
     img {
         width: 100%;
         height: 80vh;
-        object-fit: contain;
+        object-fit: cover;
+        -webkit-user-drag: none;
     }
 `;
 export const Hide = styled.div`
