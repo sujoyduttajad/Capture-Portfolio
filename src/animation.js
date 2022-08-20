@@ -8,7 +8,8 @@ export const pageAnimation = {
     y: 0,
     transition: {
       duration: 1,
-      when: "beforeChildren"
+      when: "beforeChildren",
+      staggerChildren: 0.25,
     },
   },
   exit: {
