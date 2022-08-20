@@ -49,6 +49,7 @@ const OurWork = () => {
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link className="non-styled-link" to="/work/the-athlete">
+          {/* <Hide> */}
           <motion.img variants={photoAnimation} src={athlete} alt="athlete" />
         </Link>
       </Movie>
