@@ -3,14 +3,10 @@ import home1 from "../img/home1.png";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
-import { animationTitle, fade } from "../animation";
+import { titleAnimation, fade, photoAnimation } from "../animation";
 
 const AboutSection = () => {
   // Framer-motion variant
-  const titleAnimation = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 2 } },
-  };
   const container = {
     hidden: { x: 100 },
     show: {
@@ -34,15 +30,15 @@ const AboutSection = () => {
           className="title"
         >
           <Hide>
-            <motion.h2 variants={animationTitle}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={animationTitle}>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={animationTitle}>true.</motion.h2>
+            <motion.h2 variants={titleAnimation}>true.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
@@ -52,7 +48,11 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <ImageContainer>
-        <img src={home1} alt="guy with a camera" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="guy with a camera"
+        />
       </ImageContainer>
     </Layout>
   );
