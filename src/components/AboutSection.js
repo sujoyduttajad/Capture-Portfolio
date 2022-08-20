@@ -4,6 +4,7 @@ import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   // Framer-motion variant
@@ -54,6 +55,7 @@ const AboutSection = () => {
           alt="guy with a camera"
         />
       </ImageContainer>
+      <Wave /> 
     </Layout>
   );
 };
