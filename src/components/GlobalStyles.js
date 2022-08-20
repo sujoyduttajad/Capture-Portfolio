@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
         }
     }
     h2 {
-        font-weight: lighter;
+        font-weight: 500;
         font-size: 4rem;
     }
     h3 {
