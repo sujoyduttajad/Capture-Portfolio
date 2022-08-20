@@ -36,6 +36,18 @@ const Movie = styled.div`
   }
 `;
 
+// Frame Animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffebf;
+  z-index: 2;
+`;
+// const Frame1 = styled(motion.div)``;
+
 const OurWork = () => {
   return (
     <Work
@@ -45,6 +57,7 @@ const OurWork = () => {
       exit="exit"
       style={{ backgroundColor: "#FCFCFC" }}
     >
+      <Frame1></Frame1>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
