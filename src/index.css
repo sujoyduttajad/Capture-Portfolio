@@ -28,3 +28,31 @@ code {
   border-radius: 20px;
   border: transparent;
 }
+
+.styled-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+  border: none;
+  color: inherit;
+  text-decoration: none !important;
+}
+.styled-links::after {
+  background-color: #23d997;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease 0s;
+  width: 60%;
+  height: 2px;
+}
+.styled-links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
