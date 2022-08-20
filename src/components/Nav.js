@@ -10,16 +10,18 @@ const Navbar = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
-  a {
+  /* a {
     color: white;
     text-decoration: none;
-  }
+  } */
   ul {
     display: flex;
     list-style: none;
   }
   #logo {
     font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
@@ -27,9 +29,6 @@ const Navbar = styled.nav`
     padding-left: 2rem;
     position: relative;
     color: #23d997;
-  }
-  h3 {
-    font-weight: 600;
   }
 `;
 
@@ -44,17 +43,17 @@ const Nav = () => {
       <ul>
         <li>
           <NavLink className="styled-link" to="/">
-            <h3>About Us</h3>
+            About Us
           </NavLink>
         </li>
         <li>
           <NavLink className="styled-link" to="/work">
-            <h3>Our Work</h3>
+            Our Work
           </NavLink>
         </li>
         <li>
           <NavLink className="styled-link" to="/contact">
-            <h3>Contact Us</h3>
+            Contact Us
           </NavLink>
         </li>
       </ul>
