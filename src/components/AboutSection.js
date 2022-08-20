@@ -3,7 +3,7 @@ import home1 from "../img/home1.png";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
-import { animationTitle } from "../animation";
+import { animationTitle, fade } from "../animation";
 
 const AboutSection = () => {
   // Framer-motion variant
@@ -45,11 +45,11 @@ const AboutSection = () => {
             <motion.h2 variants={animationTitle}>true.</motion.h2>
           </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <ImageContainer>
         <img src={home1} alt="guy with a camera" />
