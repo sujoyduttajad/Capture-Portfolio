@@ -23,7 +23,7 @@ const AboutSection = () => {
 
   return (
     <Layout>
-      <Description>
+      <Description style={{ zIndex: 2 }}>
         <motion.div
           variants={container}
           initial="hidden"
