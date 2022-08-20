@@ -21,7 +21,7 @@ const Movie = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background-color: #ccc;
+    background-color: #23d997;
     margin-bottom: 3rem;
   }
   img {
