@@ -2,8 +2,6 @@
 
 A landing page built with react to showcase company's portfolio comprising of it's Products and Services
 
-
-
 ## AnimatePresence
 
 AnimatePresence allows components to animate out when they're removed from the React tree.
@@ -14,7 +12,7 @@ It's required to enable exit animations because React lacks a lifecycle method t
 2. Allows them to defer that unmounting until after an operation is complete (for instance an animation).
 
 ```javascript
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 
 export const MyComponent = ({ isVisible }) => (
   <AnimatePresence>
@@ -26,29 +24,34 @@ export const MyComponent = ({ isVisible }) => (
       />
     )}
   </AnimatePresence>
-)
+);
 ```
+
 ### Usage
 
 In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
 
 AnimatePresence requires a key(pathname), which essentially will let it know that the user is on another page and it should start animating.
 
-Thus, in the Switch component we need two things to add as props - 
+Thus, in the Switch component we need two things to add as props -
+
 - key: location.pathname
 - location: location(current location)
 
 ```javascript
-  <AnimatePresence>
-        <Switch 
-          location={location} 
-          key={location.pathname}
-        ></Switch>
-  </AnimatePresence>
+<AnimatePresence>
+  <Switch location={location} key={location.pathname}></Switch>
+</AnimatePresence>
 ```
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
+### Colors
+
+- green color: `#23d997`(Caribbean Green)
+- white color: `#fff`
+- black color: `#1b1b1b`(Eerie Black)
+- gray color: `#CCC`(Light Gray)
 
 ### `npm run build` fails to minify
 
