@@ -2,9 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
+const WaveSvg = styled.svg`
+    position: absolute;
+    left: 0;
+    z-index: 1;
+`;
+
+
 const Wave = () => {
   return (
-    <svg
+    <WaveSvg
       width="1440"
       height="363"
       viewBox="0 0 1440 363"
@@ -17,7 +24,7 @@ const Wave = () => {
         strokeOpacity="0.1"
         strokeWidth="10"
       />
-    </svg>
+    </WaveSvg>
   );
 };
 
