@@ -38,7 +38,7 @@ code {
   text-decoration: none !important;
 }
 .styled-links::after {
-  background-color: #23d997;
+  background-color: #23d997 !important;
   position: absolute;
   bottom: -4px;
   left: 0;
