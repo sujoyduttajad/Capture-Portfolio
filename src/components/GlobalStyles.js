@@ -79,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
     }
     #logo {
         font-size: 1.8rem;
-        color: white;
+        color: #23d997;
         text-decoration: none !important;
         text-decoration: none;
         font-family: "Lobster", cursive;
