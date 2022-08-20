@@ -40,12 +40,12 @@ const GlobalStyles = createGlobalStyle`
         color: white;
     }
     h4 {
-        font-weight: bold;
+        font-weight: 500;
         color: #23d997;
         font-size: 2rem;
     }
     span {
-        font-weight: bold;
+        font-weight: 500;
         color: #23d997;
     }
     a {
