@@ -11,7 +11,7 @@ const ContactUs = () => {
       animate="show"
       exit="exit"
     >
-      <h1>ContactUs</h1>
+      <h4>ContactUs</h4>
     </motion.div>
   );
 };
