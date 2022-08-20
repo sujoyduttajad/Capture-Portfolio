@@ -10,21 +10,11 @@ const Navbar = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
-  /* a {
-    color: white;
-    text-decoration: none;
-  } */
   ul {
     display: flex;
     list-style: none;
   }
-  #logo {
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-    font-family: "Lobster", cursive;
-    font-weight: lighter;
-  }
+
   li {
     padding-left: 2rem;
     position: relative;
