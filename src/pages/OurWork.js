@@ -37,6 +37,7 @@ const OurWork = () => {
       variants={pageAnimation} 
       initial="hidden" 
       animate="show"
+      exit="exit"
     >
       <Movie>
         <h2>The Athlete</h2>
