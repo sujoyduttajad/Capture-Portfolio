@@ -22,7 +22,7 @@ export const ImageContainer = styled.div`
     img {
         width: 100%;
         height: 45em;
-        object-fit: cover;
+        object-fit: contain;
         -webkit-user-drag: none;
     }
 `;
