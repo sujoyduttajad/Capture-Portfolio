@@ -77,6 +77,20 @@ const GlobalStyles = createGlobalStyle`
             transform-origin: bottom left;
         }
     }
+    #logo {
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none !important;
+        text-decoration: none;
+        font-family: "Lobster", cursive;
+        font-weight: lighter;
+        &::after {
+            background-color: transparent;
+        }
+        &:hover::after {
+            transform: none;
+        }
+    }
     p {
         padding: 3rem 0rem;
         color: #ccc;
