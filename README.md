@@ -39,16 +39,12 @@ Thus, in the Switch component we need two things to add as props -
 - location: location(current location)
 
 ```javascript
-import { motion, AnimatePresence } from "framer-motion"
-
-export const MyComponent = ({ isVisible }) => (
   <AnimatePresence>
         <Switch 
           location={location} 
           key={location.pathname}
         ></Switch>
   </AnimatePresence>
-)
 ```
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
