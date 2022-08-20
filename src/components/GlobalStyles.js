@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         &:hover {
             background-color: #23d997;
-            color: white;
+            color: #1b1b1b;
         }
     }
     h2 {
@@ -52,6 +52,30 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.1rem;
         color: white;
         text-decoration: none;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        white-space: nowrap;
+        border: none;
+        text-decoration: none !important;
+        &::after {
+            background-color: #23d997;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            content: "";
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease 0s;
+            width: 100%;
+            height: 2px;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
     }
     p {
         padding: 3rem 0rem;
