@@ -1,7 +1,9 @@
 import React from "react";
 import home1 from "../img/home1.png";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
+// Animation
 import { motion } from "framer-motion";
+import { animationTitle } from "../animation";
 
 const AboutSection = () => {
   // Framer-motion variant
@@ -32,15 +34,19 @@ const AboutSection = () => {
           className="title"
         >
           <Hide>
-            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
+            <motion.h2 variants={animationTitle}>
+              We work to make
+            </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>
+            <motion.h2 variants={animationTitle}>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>true.</motion.h2>
+            <motion.h2 variants={animationTitle}>
+              true.
+            </motion.h2>
           </Hide>
         </motion.div>
         <p>
