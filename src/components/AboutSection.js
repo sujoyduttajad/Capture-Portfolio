@@ -39,7 +39,9 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnimation}>true.</motion.h2>
+            <motion.h2 variants={titleAnimation}>
+              <span>true.</span>
+            </motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
@@ -55,7 +57,7 @@ const AboutSection = () => {
           alt="guy with a camera"
         />
       </ImageContainer>
-      <Wave /> 
+      <Wave />
     </Layout>
   );
 };
