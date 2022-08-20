@@ -26,6 +26,7 @@ const Navbar = styled.nav`
     li {
         padding-left: 2rem;
         position: relative;
+        color: #23d997;
     }
 `;
 
