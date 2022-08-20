@@ -14,7 +14,7 @@ const AboutSection = () => {
     show: {
       x: 0,
       transition: {
-        duration: 0.75,
+        duration: 0.15,
         ease: "easeOut",
         staggerChildren: 0.8,
         when: "afterChildren",
