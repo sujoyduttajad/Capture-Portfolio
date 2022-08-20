@@ -50,6 +50,8 @@ const GlobalStyles = createGlobalStyle`
     }
     a {
         font-size: 1.1rem;
+        color: white;
+        text-decoration: none;
     }
     p {
         padding: 3rem 0rem;
