@@ -21,7 +21,7 @@ export const ImageContainer = styled.div`
     img {
         width: 100%;
         height: 80vh;
-        object-fit: cover;
+        object-fit: contain;
     }
 `;
 export const Hide = styled.div`
