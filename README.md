@@ -10,10 +10,10 @@ AnimatePresence allows components to animate out when they're removed from the R
 
 It's required to enable exit animations because React lacks a lifecycle method that:
 
-Notifies components when they're going to be unmounted and
-Allows them to defer that unmounting until after an operation is complete (for instance an animation).
+1. Notifies components when they're going to be unmounted and
+2. Allows them to defer that unmounting until after an operation is complete (for instance an animation).
 
-```
+```javascript
 import { motion, AnimatePresence } from "framer-motion"
 
 export const MyComponent = ({ isVisible }) => (
@@ -28,7 +28,28 @@ export const MyComponent = ({ isVisible }) => (
   </AnimatePresence>
 )
 ```
+### Usage
 
+In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
+
+AnimatePresence requires a key(pathname), which essentially will let it know that the user is on another page and it should start animating.
+
+Thus, in the Switch component we need two things to add as props - 
+- key: location.pathname
+- location: location(current location)
+
+```javascript
+import { motion, AnimatePresence } from "framer-motion"
+
+export const MyComponent = ({ isVisible }) => (
+  <AnimatePresence>
+        <Switch 
+          location={location} 
+          key={location.pathname}
+        ></Switch>
+  </AnimatePresence>
+)
+```
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
