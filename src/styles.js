@@ -21,7 +21,7 @@ export const ImageContainer = styled.div`
     overflow: hidden;
     img {
         width: 100%;
-        height: 70vh;
+        height: 45em;
         object-fit: cover;
         -webkit-user-drag: none;
     }
