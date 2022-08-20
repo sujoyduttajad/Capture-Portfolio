@@ -34,9 +34,7 @@ const AboutSection = () => {
           className="title"
         >
           <Hide>
-            <motion.h2 variants={animationTitle}>
-              We work to make
-            </motion.h2>
+            <motion.h2 variants={animationTitle}>We work to make</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={animationTitle}>
@@ -44,9 +42,7 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={animationTitle}>
-              true.
-            </motion.h2>
+            <motion.h2 variants={animationTitle}>true.</motion.h2>
           </Hide>
         </motion.div>
         <p>
