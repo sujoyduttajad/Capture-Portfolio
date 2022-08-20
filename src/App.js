@@ -8,10 +8,9 @@ import ContactUs from "./pages/ContactUs";
 import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 // Animation
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-
   const location = useLocation();
   console.log(location);
 
@@ -19,20 +18,25 @@ function App() {
     <div>
       <GlobalStyles />
       <Nav />
-      <Switch>
-        <Route path="/" exact>
-          <AboutUs />
-        </Route>
-        <Route path="/work" exact>
-          <OurWork /> 
-        </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
-        <Route path="/work/:id">
-          <MovieDetail/>
-        </Route>
-      </Switch>
+      <AnimatePresence>
+        <Switch 
+          location={location} 
+          key={location.pathname}
+        >
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/work" exact>
+            <OurWork />
+          </Route>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+          <Route path="/work/:id">
+            <MovieDetail />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }
