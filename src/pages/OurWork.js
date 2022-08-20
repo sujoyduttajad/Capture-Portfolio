@@ -38,6 +38,7 @@ const OurWork = () => {
       initial="hidden" 
       animate="show"
       exit="exit"
+      style={{ backgroundColor: '#FCFCFC' }}
     >
       <Movie>
         <h2>The Athlete</h2>
