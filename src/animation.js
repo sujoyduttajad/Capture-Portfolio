@@ -37,7 +37,20 @@ export const titleAnimation = {
 export const fade = {
   hidden: {
     opacity: 0,
-    scale: 1.5
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
+
+export const photoAnimation = {
+  hidden: {
+    scale: 1.5,
+    opacity: 0,
   },
   show: {
     scale: 1,
@@ -48,16 +61,3 @@ export const fade = {
     },
   },
 };
-
-export const photoAnimation = {
-    hidden: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 0.75,
-        ease: "easeOut",
-      },
-    },
-  };
