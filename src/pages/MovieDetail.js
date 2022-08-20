@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { MovieState } from "../movieState";
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: #fff;
 `;
 
@@ -36,7 +39,7 @@ const AwardStyle = styled.div`
   h3 {
     font-size: 2rem;
   }
-  .line{
+  .line {
     width: 100%;
     background: #23d997;
     height: 0.5rem;
@@ -80,7 +83,12 @@ const MovieDetail = () => {
   }, [movies, url]);
 
   return (
-    <Details>
+    <Details
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       {movie ? (
         <div>
           <Headline>
