@@ -30,7 +30,7 @@ export const MyComponent = ({ isVisible }) => (
 ```
 
 
-[https://www.framer.com/docs/animate-presence/](For More information, click here)
+[For More information, click here](https://www.framer.com/docs/animate-presence/)
 
 
 ### `npm run build` fails to minify
