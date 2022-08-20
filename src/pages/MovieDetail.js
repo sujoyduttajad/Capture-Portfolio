@@ -96,9 +96,9 @@ const MovieDetail = () => {
             <img src={movie.mainImg} alt="movie" />
           </Headline>
           <Awards>
-            {movie.awards.map((award) => (
+            {movie.awards.map((award, index) => (
               <Award
-                key={award.title}
+                key={index}
                 title={award.title}
                 description={award.description}
               />
