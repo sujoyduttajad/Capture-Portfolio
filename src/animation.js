@@ -57,6 +57,7 @@ export const photoAnimation = {
     transition: {
       duration: 0.75,
       ease: "easeOut",
+      delay: 0.5
     },
   },
 };
