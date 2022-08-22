@@ -55,6 +55,11 @@ Thus, in the Switch component we need two things to add as props -
 - white color: `#fff`
 - black color: `#1b1b1b` (Eerie Black)
 - gray color: `#CCC` (Light Gray)
+- Frame colors 
+  - background-color: `#ff8efb`
+  - background-color: `#8ed2ff`
+  - background-color: `#8effa0`
+
 
 ## FAQ Accordion
 
