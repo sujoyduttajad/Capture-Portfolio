@@ -46,13 +46,12 @@ Thus, in the Switch component we need two things to add as props -
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
-### Colors
+## Colors
 
 - green color: `#23d997` (Caribbean Green)
 - white color: `#fff`
 - black color: `#1b1b1b` (Eerie Black)
 - gray color: `#CCC` (Light Gray)
 
-### `npm run build` fails to minify
+## FAQ Accordion
 
-This section has moved here: [https://facebook.github.io/](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
