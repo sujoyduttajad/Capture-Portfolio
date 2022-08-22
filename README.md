@@ -52,7 +52,7 @@ Thus, in the Switch component we need two things to add as props -
 ## Colors
 
 - green color: `#23d997` (Caribbean Green)
-- white color: `#fff`
+- white color: `#ffffff`
 - black color: `#1b1b1b` (Eerie Black)
 - gray color: `#CCC` (Light Gray)
 - Frame colors 
