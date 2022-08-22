@@ -1,6 +1,7 @@
 # Capture Portfolio
 
 A landing page built with react to showcase company's portfolio comprising of it's Products and Services
+<img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
 ## AnimatePresence
 
