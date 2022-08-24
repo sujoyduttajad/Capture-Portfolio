@@ -37,9 +37,9 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
 
-      <div className="question">
-        <h4>How Do I Start?</h4>
-        <Toggle>
+      
+        <Toggle title="How Do I Start?" >
+        <div className="question">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -47,9 +47,8 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-        </Toggle>
-        <div className="faq-line"></div>
       </div>
+      </Toggle>
 
       <div className="question">
         <h4>Daily Schedule</h4>
