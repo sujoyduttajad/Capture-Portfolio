@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const Toggle = () => {
+const Toggle = ({ children }) => {
+
+  const [toggle, setToggle] = useState(false);
+  
   return (
-    <div>Toggle</div>
+    <div onClick={() => setToggle(!toggle)}>
+        { toggle ? children : '' }
+    </div>
   )
-}
+};
 
-export default Toggle
+export default Toggle;
