@@ -37,8 +37,7 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
 
-      
-        <Toggle title="How Do I Start?" >
+      <Toggle title="How Do I Start?">
         <div className="question">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
@@ -47,12 +46,10 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-      </div>
+        </div>
       </Toggle>
-
-      <div className="question">
-        <h4>Daily Schedule</h4>
-        <Toggle>
+      <Toggle title="Daily Schedule">
+        <div className="question">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -60,13 +57,10 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-        </Toggle>
-        <div className="faq-line"></div>
-      </div>
-
-      <div className="question">
-        <h4>Different Payment Methods</h4>
-        <Toggle>
+        </div>
+      </Toggle>
+      <Toggle title="Different Payment Methods">
+        <div className="question">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -74,13 +68,10 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-        </Toggle>
-        <div className="faq-line"></div>
-      </div>
-
-      <div className="question">
-        <h4>What products do you offer?</h4>
-        <Toggle>
+        </div>
+      </Toggle>
+      <Toggle title="What products do you offer?">
+        <div className="question">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -88,9 +79,8 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-        </Toggle>
-        <div className="faq-line"></div>
-      </div>
+        </div>
+      </Toggle>
     </FAQ>
   );
 };
