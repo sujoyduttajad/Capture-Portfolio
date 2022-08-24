@@ -36,9 +36,10 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>How Do I Start?</h4>
+
+      <div className="question">
+        <h4>How Do I Start?</h4>
+        <Toggle>
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -46,12 +47,13 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Daily Schedule</h4>
+        </Toggle>
+        <div className="faq-line"></div>
+      </div>
+
+      <div className="question">
+        <h4>Daily Schedule</h4>
+        <Toggle>
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -59,12 +61,13 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Different Payment Methods</h4>
+        </Toggle>
+        <div className="faq-line"></div>
+      </div>
+
+      <div className="question">
+        <h4>Different Payment Methods</h4>
+        <Toggle>
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -72,12 +75,13 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>What products do you offer?</h4>
+        </Toggle>
+        <div className="faq-line"></div>
+      </div>
+
+      <div className="question">
+        <h4>What products do you offer?</h4>
+        <Toggle>
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -85,9 +89,9 @@ const FaqSection = () => {
               dolor.
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
+        </Toggle>
+        <div className="faq-line"></div>
+      </div>
     </FAQ>
   );
 };
