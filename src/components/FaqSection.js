@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
-import { Layout, Description } from '../styles'
+import { Layout } from '../styles'
 
 const FAQ = styled(Layout)`
     display: block;
@@ -30,10 +30,13 @@ const FAQ = styled(Layout)`
 `;
 
 const FaqSection = () => {
+  
+  const [faqToggle, setFaqToggle] = useState(false);
+
   return (
     <FAQ className='faq'>
         <h2>Any Questions <span>FAQ</span></h2>
-        <div className='question'>
+        <div onClick={() => setFaqToggle(!faqToggle)} className='question'>
             <h4>How Do I Start?</h4>
             <div className='answer'>
                 <p>Lorem ipsum dolor sit amet.</p>
