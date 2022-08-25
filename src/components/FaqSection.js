@@ -18,14 +18,12 @@ const FAQ = styled(Layout)`
     /* margin: 2rem 0; */
     width: 100%;
   }
-  .question {
-    padding: 3rem 0;
-    cursor: pointer;
-  }
   .answer {
     padding: 2rem 0;
     p {
       padding: 1rem 0;
+      font-size: 1.2rem;
+      letter-spacing: 1.5px;
     }
   }
 `;
@@ -38,47 +36,39 @@ const FaqSection = () => {
       </h2>
 
       <Toggle title="How Do I Start?">
-        <div className="question">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
-            </p>
-          </div>
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+            dolor.
+          </p>
         </div>
       </Toggle>
       <Toggle title="Daily Schedule">
-        <div className="question">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
-            </p>
-          </div>
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+            dolor.
+          </p>
         </div>
       </Toggle>
       <Toggle title="Different Payment Methods">
-        <div className="question">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
-            </p>
-          </div>
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+            dolor.
+          </p>
         </div>
       </Toggle>
       <Toggle title="What products do you offer?">
-        <div className="question">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
-            </p>
-          </div>
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+            dolor.
+          </p>
         </div>
       </Toggle>
     </FAQ>
