@@ -13,7 +13,6 @@ const FAQ = styled(Layout)`
     font-weight: lighter;
   }
   h4 {
-    cursor: pointer;
     font-size: 1.7em;
     letter-spacing: 1.5px;
   }
@@ -22,6 +21,10 @@ const FAQ = styled(Layout)`
     height: 0.2rem;
     margin: 2rem 0;
     width: 100%;
+  }
+  .question {
+    padding: 3rem 0rem;
+    cursor: pointer;
   }
   .answer {
     padding: 2rem 0;
