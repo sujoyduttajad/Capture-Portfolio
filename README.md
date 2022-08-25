@@ -49,6 +49,28 @@ Thus, in the Switch component we need two things to add as props -
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
+## AnimateSharedLayout
+
+The AnimateSharedLayout component enables you to perform layout animations:
+
+- Across a set of components that don't otherwise share state.
+- Between different components that share a layoutId as they're added/removed.
+
+```javascript
+import { AnimateSharedLayout } from "framer-motion"
+```
+motion components with a layout prop will automatically animate layout changes that occur when they re-render.
+
+```javascript
+<motion.div layout />
+```
+
+However, if a layout component changes layout due to local state change, surrounding components need a way to know they should animate their layout, too.
+
+[For More information, click here](https://www.framer.com/docs/animate-shared-layout/)
+
+### Usage
+
 ## Colors
 
 - green color: `#23d997` (Caribbean Green)
