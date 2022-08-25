@@ -38,6 +38,12 @@ const FAQ = styled(Layout)`
   }
   .header-inline {
     display: flex;
+    justify-content: space-between;
+  }
+  line {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: transparent;
   }
 `;
 
