@@ -7,7 +7,7 @@ const Toggle = ({ children, title }) => {
 
   return (
     <div onClick={() => setToggle(!toggle)}>
-      <motion.h4>{title}</motion.h4>
+      <div className="header-inline"><motion.h4>{title}</motion.h4></div>
       {toggle ? children : ""}
       <div className="faq-line"></div>
     </div>
