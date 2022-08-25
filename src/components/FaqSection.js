@@ -25,7 +25,7 @@ const FAQ = styled(Layout)`
     width: 100%;
   }
   .question {
-    padding: 3rem 0rem;
+    padding: 0.5rem 0rem;
     cursor: pointer;
   }
   .answer {
