@@ -32,17 +32,17 @@ const Toggle = ({ children, title }) => {
           animate="visible"
         >
           <motion.line
-            x1="2%"
+            x1="1%"
             y1="30%"
             x2="100%"
-            y2="90%"
+            y2="95%"
             stroke="#00cc88"
             variants={draw}
             custom={2}
           />
           <motion.line
-            x1="2%"
-            y1="90%"
+            x1="1%"
+            y1="95%"
             x2="100%"
             y2="30%"
             stroke="#00cc88"
