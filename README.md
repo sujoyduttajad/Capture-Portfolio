@@ -85,3 +85,8 @@ However, if a layout component changes layout due to local state change, surroun
 
 ## FAQ Accordion
 
+Well the accordion works quite good with framer-motion animation but I wanted to provide a close/open icon for better useability/accessbility so decided to use a cross and plus icon which incorporated framer-motion animation.
+
+Came across this codesandbox resource 
+[For More information, click here](https://codesandbox.io/s/framer-motion-5-1-line-drawing-ph6ln?from-embed=&file=/src/App.js)
+
