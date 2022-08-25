@@ -12,10 +12,15 @@ const FAQ = styled(Layout)`
     padding-bottom: 2rem;
     font-weight: lighter;
   }
+  h4 {
+    cursor: pointer;
+    font-size: 1.7em;
+    letter-spacing: 1.5px;
+  }
   .faq-line {
     background-color: #ccc;
     height: 0.2rem;
-    /* margin: 2rem 0; */
+    margin: 2rem 0;
     width: 100%;
   }
   .answer {
