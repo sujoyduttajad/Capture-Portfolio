@@ -11,9 +11,9 @@ const Toggle = ({ children, title }) => {
       className="question" 
       onClick={() => setToggle(!toggle)}
     >
-      <motion.div className="header-inline">
-        <motion.h4>{title}</motion.h4>
-      </motion.div>
+      <div className="header-inline">
+        <motion.h4 layout >{title}</motion.h4>
+      </div>
       {toggle ? children : ""}
       <div className="faq-line"></div>
     </motion.div>
