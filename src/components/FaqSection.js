@@ -31,6 +31,9 @@ const FAQ = styled(Layout)`
       letter-spacing: 1.5px;
     }
   }
+  .header-inline {
+    display: flex;
+  }
 `;
 
 const FaqSection = () => {
