@@ -92,3 +92,41 @@ Came across this codesandbox resource
 - [Framer Documentation, click here](https://www.framer.com/docs/component/)
 - [Framer Rotate tutorial](https://www.youtube.com/watch?v=ILxNdOtKbNQ&t=368s)
 - [Quick Animation resource ](https://pavanjadhaw.me/blog/animate-svg-using-framer-motion)
+
+### To rotate an SVG using Framer-motion -
+
+So I created this accordion and thought it would be great addition if I can show the user some animation when accordion is closed or opened. 
+
+
+To create such animation on event all you need to do is to create a variant with hidden and visible prop
+
+```javascript
+export const rotateSvg = {
+  hidden: {
+    rotate: -45,
+    opacity: 1
+  },
+  visible: {
+    rotate: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut",
+    },
+  },
+};
+```
+
+Then use the animate prop inside the SVG to animate on some state boolean value
+Here, ```toggle``` is the state
+
+```javascript
+  <motion.svg
+    animate={toggle ? "visible" : "hidden"}
+  >
+    <motion.line
+      variants={rotateSvg}
+    />
+  </motion.svg>
+```
+
