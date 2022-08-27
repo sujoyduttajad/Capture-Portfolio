@@ -92,14 +92,14 @@ const OurWork = () => {
         ref={element2}
       >
         <h2>The Racer</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link className="non-styled-link" to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
       <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
         <h2>Good Times</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link className="non-styled-link" to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
