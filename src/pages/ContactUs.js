@@ -1,18 +1,35 @@
 import React from "react";
+import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import { Hide } from "../styles";
+
+const ContactStyle = styled(motion.div)`
+  padding: 5rem 10rem;
+  color: #353535;
+  min-height: 90vh;
+`;
+
+const Title = styled.div`
+  margin-bottom: 4rem;
+  color: #1b1b1b;
+`;
 
 const ContactUs = () => {
   return (
-    <motion.div
+    <ContactStyle
       variants={pageAnimation}
       initial="hidden"
       animate="show"
       exit="exit"
     >
-      <h4>ContactUs</h4>
-    </motion.div>
+      <Title>
+        <Hide>
+          <motion.h2>Get in touch</motion.h2>
+        </Hide>
+      </Title>
+    </ContactStyle>
   );
 };
 
