@@ -17,6 +17,21 @@ const Title = styled.div`
   color: #1b1b1b;
 `;
 
+const Social = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 2rem;
+  }
+`;
+
+const Circle = styled.div`
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #353535;
+`;
+
 const ContactUs = () => {
   return (
     <ContactStyle
@@ -30,6 +45,12 @@ const ContactUs = () => {
           <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
         </Hide>
       </Title>
+      <div>
+        <Social>
+          <Circle />
+          <h4>Send Us A Message</h4>
+        </Social>
+      </div>
     </ContactStyle>
   );
 };
