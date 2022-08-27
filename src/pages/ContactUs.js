@@ -40,6 +40,13 @@ const Circle = styled.img`
   opacity: 0.9;
 `;
 
+const FormTitle = styled(motion.div)`
+  h4 {
+    color: #1b1b1b;
+    font-size: 4em;
+  }
+`;
+
 const ContactUs = () => {
   return (
     <>
@@ -51,10 +58,12 @@ const ContactUs = () => {
       >
         <Title>
           <Hide>
-            <motion.h6 variants={titleAnimation}>
-              Contact us for any photography or videography ideas that you have.
-              We have professionals with amazing skills.
-            </motion.h6>
+            <FormTitle variants={titleAnimation}>
+              <h4>
+                Contact us for any photography or videography ideas that you
+                have. We have professionals with amazing skills.
+              </h4>
+            </FormTitle>
           </Hide>
         </Title>
       </ContactStyle>
