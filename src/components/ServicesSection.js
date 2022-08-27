@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Layout, Description } from "../styles";
+// Animation
+import { motion } from "framer-motion";
 import { useScroll } from "../hooks/useScroll";
-import { fade } from "../animation";
+import { fade, photoAnimation} from "../animation";
 //Import Icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
@@ -49,7 +51,13 @@ const ServicesSection = () => {
         <Cards className="cards">
           <Card className="card">
             <div className="icon">
-              <img src={clock} alt="icon" />
+              <motion.img
+                variants={photoAnimation}
+                initial="hidden"
+                animate="show"
+                src={clock}
+                alt="icon"
+              />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
@@ -78,7 +86,13 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <div className="image">
-        <img src={home2} alt="" />
+        <motion.img
+          variants={photoAnimation}
+          initial="hidden"
+          animate="show"
+          src={home2}
+          alt=""
+        />
       </div>
     </Services>
   );
