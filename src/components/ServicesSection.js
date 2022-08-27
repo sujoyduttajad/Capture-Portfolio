@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Layout, Description } from "../styles";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import { fade } from "../animation";
 //Import Icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
@@ -49,10 +50,10 @@ const ServicesSection = () => {
   }
 
   return (
-    <Services ref={element}>
+    <Services variants={fade} animate={controls} ref={element}>
       <Description>
         <h2>
-          High <span>quality</span> services
+          High <span>quality</span> services 
         </h2>
         <Cards className="cards">
           <Card className="card">
