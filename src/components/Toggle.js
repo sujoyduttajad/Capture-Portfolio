@@ -16,16 +16,16 @@ const Toggle = ({ children, title }) => {
           animate={toggle ? "visible" : "hidden"}
         >
           <motion.line
-            x1="1%"
+            x1="10%"
             y1="30%"
-            x2="100%"
+            x2="110%"
             y2="95%"
             stroke="#00cc88"
             custom={2.5}
             variants={rotateSvg}
           />
           <motion.line
-            x1="5%"
+            x1="8%"
             y1="95%"
             x2="100%"
             y2="30%"
