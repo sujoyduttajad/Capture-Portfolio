@@ -45,8 +45,8 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
+          Grab the opportunity to capture memories that you will treasure for a
+          lifetime. Why be ordinary when you can be extraordinary?
         </motion.p>
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
