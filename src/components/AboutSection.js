@@ -53,8 +53,8 @@ const AboutSection = () => {
       <ImageContainer>
         <motion.img
           variants={photoAnimation}
-          // initial="hidden"
-          // animate="show"
+          initial="hidden"
+          animate="show"
           src={home1}
           alt="guy with a camera"
         />
