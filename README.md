@@ -89,7 +89,6 @@ Well the accordion works quite good with framer-motion animation but I wanted to
 
 Came across this codesandbox resource 
 - [Codesandbox link, click here](https://codesandbox.io/s/framer-motion-5-1-line-drawing-ph6ln?from-embed=&file=/src/App.js)
-
 - [Framer Documentation, click here](https://www.framer.com/docs/component/)
 
 
