@@ -21,6 +21,7 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  background-color: #f7f7f7;
   h2 {
     padding: 1rem 0;
   }
@@ -69,7 +70,6 @@ const OurWork = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ backgroundColor: "#FCFCFC" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
