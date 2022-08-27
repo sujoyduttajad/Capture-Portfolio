@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Layout, Description } from "../styles";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+import { useScroll } from "../hooks/useScroll";
 import { fade } from "../animation";
 //Import Icons
 import clock from "../img/clock.svg";
@@ -39,14 +38,7 @@ const Card = styled.div`
 `;
 
 const ServicesSection = () => {
-  const [element, view] = useInView({ threshold: 0.5 });
-  const controls = useAnimation();
-
-  if (view) {
-    controls.start("show");
-  } else {
-    controls.start("hidden");
-  }
+  const [element, controls] = useScroll();
 
   return (
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
