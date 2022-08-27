@@ -21,11 +21,11 @@ const Toggle = ({ children, title }) => {
             x2="100%"
             y2="95%"
             stroke="#00cc88"
-            custom={2}
+            custom={2.5}
             variants={rotateSvg}
           />
           <motion.line
-            x1="1%"
+            x1="5%"
             y1="95%"
             x2="100%"
             y2="30%"
