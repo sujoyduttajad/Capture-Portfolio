@@ -1,20 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => {
-    const delay = 1 + i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-        opacity: { delay, duration: 0.01 },
-      },
-    };
-  },
-};
+
 
 const Toggle = ({ children, title }) => {
   console.log(children);
@@ -37,7 +24,7 @@ const Toggle = ({ children, title }) => {
             x2="100%"
             y2="95%"
             stroke="#00cc88"
-            variants={draw}
+            // variants={draw}
             custom={2}
           />
           <motion.line
@@ -46,7 +33,7 @@ const Toggle = ({ children, title }) => {
             x2="100%"
             y2="30%"
             stroke="#00cc88"
-            variants={draw}
+            // variants={draw}
             custom={2.5}
           />
         </motion.svg>
