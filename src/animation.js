@@ -89,3 +89,17 @@ export const sliderContainer = {
     },
   },
 };
+
+// Variants for rotating SVG
+export const rotateSvg = {
+  hidden: {
+    rotate: -100,
+  },
+  visible: {
+    rotate: 0,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    }
+  }
+}
