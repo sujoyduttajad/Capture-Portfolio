@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, titleAnimation } from "../animation";
 import { Hide } from "../styles";
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  background-color: #fff;
 `;
 
 const Title = styled.div`
@@ -26,7 +27,7 @@ const ContactUs = () => {
     >
       <Title>
         <Hide>
-          <motion.h2>Get in touch</motion.h2>
+          <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
         </Hide>
       </Title>
     </ContactStyle>
