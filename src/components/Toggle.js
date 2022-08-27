@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-
+import { rotateSvg } from "../animation";
 
 const Toggle = ({ children, title }) => {
   console.log(children);
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <motion.div layout className="question" onClick={() => setToggle(!toggle)}>
@@ -17,6 +16,7 @@ const Toggle = ({ children, title }) => {
           viewBox="0 0 60 90"
           initial="hidden"
           animate="visible"
+          variants={toggle ? rotateSvg : ''}
         >
           <motion.line
             x1="1%"
@@ -24,7 +24,6 @@ const Toggle = ({ children, title }) => {
             x2="100%"
             y2="95%"
             stroke="#00cc88"
-            // variants={draw}
             custom={2}
           />
           <motion.line
@@ -33,7 +32,6 @@ const Toggle = ({ children, title }) => {
             x2="100%"
             y2="30%"
             stroke="#00cc88"
-            // variants={draw}
             custom={2.5}
           />
         </motion.svg>
