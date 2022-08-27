@@ -57,7 +57,7 @@ export const photoAnimation = {
     transition: {
       duration: 0.75,
       ease: "easeOut",
-      delay: 0.5
+      delay: 0.5,
     },
   },
 };
@@ -93,13 +93,15 @@ export const sliderContainer = {
 // Variants for rotating SVG
 export const rotateSvg = {
   hidden: {
-    rotate: -100,
+    rotate: -45,
+    opacity: 1
   },
   visible: {
     rotate: 0,
+    opacity: 1,
     transition: {
-      duration: 0.75,
-      ease: "easeOut",
-    }
-  }
-}
+      duration: 0.3,
+      ease: "easeInOut",
+    },
+  },
+};
