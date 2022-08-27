@@ -10,6 +10,10 @@ const Navbar = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 5000;
   ul {
     display: flex;
     list-style: none;
