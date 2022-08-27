@@ -4,7 +4,6 @@ import { rotateSvg } from "../animation";
 
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
-  console.log(toggle)
 
   return (
     <motion.div layout className="question" onClick={() => setToggle(!toggle)}>
@@ -14,7 +13,6 @@ const Toggle = ({ children, title }) => {
           width="20"
           height="20"
           viewBox="0 0 60 90"
-          // initial="hidden"
           animate={toggle ? "visible" : "hidden"}
         >
           <motion.line
