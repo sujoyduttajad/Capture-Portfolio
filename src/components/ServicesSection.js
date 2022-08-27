@@ -1,12 +1,15 @@
 import React from "react";
+import styled from "styled-components";
+import { Layout, Description } from "../styles";
+import { useInView } from "react-intersection-observer";
+
 //Import Icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
-import { Layout, Description } from "../styles";
-import styled from "styled-components";
+
 
 const Services = styled(Layout)`
   h2 {
@@ -36,8 +39,11 @@ const Card = styled.div`
 `;
 
 const ServicesSection = () => {
+  const [element, view] = useInView({ threshold: 0.5 });
+  console.log(view)
+
   return (
-    <Services>
+    <Services ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
