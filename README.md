@@ -74,8 +74,12 @@ However, if a layout component changes layout due to local state change, surroun
 ## Colors
 
 - green color: `#23d997` (Caribbean Green)
-- white color: `#ffffff`
-- black color: `#1b1b1b` (Eerie Black)
+- white color: 
+    1. `#ffffff`
+    2. `f7f7f7`
+- black color: 
+    1. `#1b1b1b` (Eerie Black)
+    2. `#353535` (Jet Black)
 - gray color: `#CCC` (Light Gray)
 - Frame colors 
   - background-color: `#ff8efb`
