@@ -11,7 +11,6 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 
-
 const Services = styled(Layout)`
   h2 {
     padding-bottom: 5rem;
@@ -43,17 +42,17 @@ const ServicesSection = () => {
   const [element, view] = useInView({ threshold: 0.5 });
   const controls = useAnimation();
 
-  if(view) {
-    controls.start('show');
+  if (view) {
+    controls.start("show");
   } else {
-    controls.start('hidden')
+    controls.start("hidden");
   }
 
   return (
-    <Services variants={fade} animate={controls} ref={element}>
+    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
-          High <span>quality</span> services 
+          High <span>quality</span> services
         </h2>
         <Cards className="cards">
           <Card className="card">
