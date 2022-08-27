@@ -4,6 +4,8 @@ import { Layout } from "../styles";
 import Toggle from "./Toggle";
 // Animation
 import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "../hooks/useScroll";
+import { fade } from "../animation";
 
 const FAQ = styled(Layout)`
   display: block;
@@ -48,8 +50,16 @@ const FAQ = styled(Layout)`
 `;
 
 const FaqSection = () => {
+  const [element, controls] = useScroll();
+  
   return (
-    <FAQ className="faq">
+    <FAQ
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+      className="faq"
+    >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
