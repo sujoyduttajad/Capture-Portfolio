@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
 import { Hide } from "../styles";
 // Icons
-import Gmail from '../img/gmail-logo.svg'
-import Twitter from '../img/twitter-logo.svg'
-import Instagram from '../img/instagram-logo.svg'
-import Youtube from '../img/youtube-logo.svg'
+import Gmail from "../img/gmail-logo.svg";
+import Twitter from "../img/twitter-logo.svg";
+import Instagram from "../img/instagram-logo.svg";
+import Youtube from "../img/youtube-logo.svg";
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
@@ -42,44 +42,61 @@ const Circle = styled.img`
 
 const ContactUs = () => {
   return (
-    <ContactStyle
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
-    >
-      <Title>
-        <Hide>
-          <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
-        </Hide>
-      </Title>
-      <div>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Gmail} />
-            <h4>Gmail</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Instagram} />
-            <h4>Instagram</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Twitter} />
-            <h4>Twitter</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Youtube} />
-            <h4>YouTube</h4>
-          </Social>
-        </Hide>
-      </div>
-    </ContactStyle>
+    <>
+      <ContactStyle
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
+        <Title>
+          <Hide>
+            <motion.h6 variants={titleAnimation}>
+              Contact us for any photography or videography ideas that you have.
+              We have professionals with amazing skills.
+            </motion.h6>
+          </Hide>
+        </Title>
+      </ContactStyle>
+      <ContactStyle
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
+        <Title>
+          <Hide>
+            <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
+          </Hide>
+        </Title>
+        <div>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Gmail} />
+              <h4>Gmail</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Instagram} />
+              <h4>Instagram</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Twitter} />
+              <h4>Twitter</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Youtube} />
+              <h4>YouTube</h4>
+            </Social>
+          </Hide>
+        </div>
+      </ContactStyle>
+    </>
   );
 };
 
