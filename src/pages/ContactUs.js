@@ -14,7 +14,7 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
-  background-color: #f7f7f7;
+  background-color: #23d997;
 `;
 
 const Title = styled.div`
@@ -28,6 +28,7 @@ const Social = styled(motion.div)`
   margin: 1em;
   h4 {
     margin: 1rem;
+    color: #353535;
   }
 `;
 
@@ -56,7 +57,7 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnimation}>
             <Circle src={Gmail} />
-            <h4>GMail</h4>
+            <h4>Gmail</h4>
           </Social>
         </Hide>
         <Hide>
