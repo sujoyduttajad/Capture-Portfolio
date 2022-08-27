@@ -4,12 +4,17 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
 import { Hide } from "../styles";
+// Icons
+import Gmail from '../img/gmail-logo.svg'
+import Twitter from '../img/twitter-logo.svg'
+import Instagram from '../img/instagram-logo.svg'
+import Youtube from '../img/youtube-logo.svg'
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
-  background-color: #fff;
+  background-color: #f7f7f7;
 `;
 
 const Title = styled.div`
@@ -20,16 +25,18 @@ const Title = styled.div`
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
-  h2 {
-    margin: 2rem;
+  margin: 1em;
+  h4 {
+    margin: 1rem;
   }
 `;
 
-const Circle = styled.div`
+const Circle = styled.img`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background-color: #353535;
+  object-fit: cover;
+  opacity: 0.9;
 `;
 
 const ContactUs = () => {
@@ -46,10 +53,30 @@ const ContactUs = () => {
         </Hide>
       </Title>
       <div>
-        <Social>
-          <Circle />
-          <h4>Send Us A Message</h4>
-        </Social>
+        <Hide>
+          <Social variants={titleAnimation}>
+            <Circle src={Gmail} />
+            <h4>GMail</h4>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnimation}>
+            <Circle src={Instagram} />
+            <h4>Instagram</h4>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnimation}>
+            <Circle src={Twitter} />
+            <h4>Twitter</h4>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnimation}>
+            <Circle src={Youtube} />
+            <h4>YouTube</h4>
+          </Social>
+        </Hide>
       </div>
     </ContactStyle>
   );
