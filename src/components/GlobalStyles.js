@@ -1,12 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-/* 
-    green color: #23d997(Caribbean Green)
-    white color: 
-    black color: #1b1b1b(Eerie Black)
-    gray color: #CCC(Light Gray)
-*/
-
 const GlobalStyles = createGlobalStyle`
     *{
         margin: 0;
