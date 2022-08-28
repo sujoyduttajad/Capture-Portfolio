@@ -10,10 +10,10 @@ import Twitter from "../img/twitter-logo.svg";
 import Instagram from "../img/instagram-logo.svg";
 import Youtube from "../img/youtube-logo.svg";
 
-const ContactStyle = styled(motion.div)`
+const ContactStyle = styled(motion.section)`
   padding: 5rem 10rem;
   color: #353535;
-  min-height: 90vh;
+  height: 100vh;
   background-color: #23d997;
 `;
 
@@ -45,6 +45,9 @@ const FormTitle = styled(motion.div)`
     color: #1b1b1b;
     font-size: 4em;
   }
+  p {
+    color: #353535;
+  }
 `;
 
 const ContactUs = () => {
@@ -59,10 +62,11 @@ const ContactUs = () => {
         <Title>
           <Hide>
             <FormTitle variants={titleAnimation}>
-              <h4>
+              <motion.h4>Let's work together</motion.h4>
+              <motion.p>
                 Contact us for any photography or videography ideas that you
                 have.
-              </h4>
+              </motion.p>
             </FormTitle>
           </Hide>
         </Title>
