@@ -12,14 +12,22 @@ import Youtube from "../img/youtube-logo.svg";
 
 const ContactStyle = styled(motion.section)`
   padding: 5rem 10rem;
-  color: #353535;
   height: 100vh;
+  color: #353535;
   background-color: #23d997;
 `;
-
+const ContactSocial = styled(motion.section)`
+  padding: 5rem 10rem;
+  height: 100vh;
+  color: #23d997;
+  background-color: #353535;
+`;
 const Title = styled.div`
   margin-bottom: 4rem;
   color: #1b1b1b;
+  h2 {
+    color: #f7f7f7;
+  }
 `;
 
 const Social = styled(motion.div)`
@@ -28,7 +36,7 @@ const Social = styled(motion.div)`
   margin: 1em;
   h4 {
     margin: 1rem;
-    color: #353535;
+    color: #23d997;
   }
 `;
 
@@ -37,7 +45,8 @@ const Circle = styled.img`
   width: 3rem;
   height: 3rem;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 1;
+  background-color: #f7f7f7;
 `;
 
 const FormTitle = styled(motion.div)`
@@ -59,19 +68,16 @@ const ContactUs = () => {
         animate="show"
         exit="exit"
       >
-        <Title>
-          <Hide>
-            <FormTitle variants={titleAnimation}>
-              <motion.h4>Let's work together</motion.h4>
-              <motion.p>
-                Contact us for any photography or videography ideas that you
-                have.
-              </motion.p>
-            </FormTitle>
-          </Hide>
-        </Title>
+        <Hide>
+          <FormTitle variants={titleAnimation}>
+            <motion.h4>Let's work together</motion.h4>
+            <motion.p>
+              Contact us for any photography or videography ideas that you have.
+            </motion.p>
+          </FormTitle>
+        </Hide>
       </ContactStyle>
-      <ContactStyle
+      <ContactSocial
         variants={pageAnimation}
         initial="hidden"
         animate="show"
@@ -79,7 +85,9 @@ const ContactUs = () => {
       >
         <Title>
           <Hide>
-            <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
+            <motion.h2 variants={titleAnimation}>
+              Get in touch
+            </motion.h2>
           </Hide>
         </Title>
         <div>
@@ -108,7 +116,7 @@ const ContactUs = () => {
             </Social>
           </Hide>
         </div>
-      </ContactStyle>
+      </ContactSocial>
     </>
   );
 };
