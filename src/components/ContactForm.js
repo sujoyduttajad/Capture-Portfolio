@@ -38,12 +38,13 @@ const FormContainer = styled.form`
     color: #23d997;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
+    letter-spacing: 1.4px;
   }
   button {
     background: #23d997;
     color: #1b1b1b;
     padding: 0.8rem 1rem;
-    border-radius: 5.5px;
+    border-radius: 5.55px;
     margin-top: 2rem;
   }
   input, textarea {
