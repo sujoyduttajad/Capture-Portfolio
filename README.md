@@ -80,6 +80,7 @@ However, if a layout component changes layout due to local state change, surroun
 - black color: 
     1. `#1b1b1b` (Eerie Black)
     2. `#353535` (Jet Black)
+    3. `#282828`
 - gray color: `#CCC` (Light Gray)
 - Frame colors 
   - background-color: `#ff8efb`
