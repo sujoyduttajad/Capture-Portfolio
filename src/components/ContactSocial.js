@@ -30,7 +30,7 @@ const Container = styled(motion.div)`
   flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 const SocialLinks = styled(motion.div)`
   display: flex;
@@ -65,6 +65,7 @@ const Circle = styled.img`
   padding: 0.5rem;
   object-fit: cover;
   opacity: 0.8;
+  margin: 1rem;
   cursor: pointer;
   z-index: 100;
   background-color: #333;
@@ -72,37 +73,40 @@ const Circle = styled.img`
     opacity: 1;
   }
 `;
-const ImgContainer = styled.div``;
+const ImgContainer = styled.div`
+    margin: 0 auto;
+`;
 const Image = styled(motion.img)`
   width: 20rem;
   height: 32rem;
 `;
 const AddressBox = styled.div`
-    display: inline-block;
-    margin-left: 2rem;
-    h3 {
-        margin-top: 1rem;
-        font-size: 1.75rem;
-        font-weight: 300;
-        letter-spacing: 1.8px;
-    }
-    p {
-        margin: 0;
-        padding: 0;
-        font-size: 0.95rem;
-        font-weight: 200;
-    }
-    ul{
-        margin: 0;
-        list-style-type: none;
-        font-weight: 200;
-    }
+  display: inline-block;
+  margin-left: 2rem;
+  h3 {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+    font-weight: 200;
+  }
+  ul {
+    margin: 0;
+    list-style-type: none;
+    font-weight: 200;
+  }
+`;
+const Footer = styled.footer`
+    margin: 2rem;
 `;
 
-
 const ContactSocial = () => {
-
-  const date = new Date();  
+  const date = new Date();
 
   return (
     <StyledSocial
@@ -121,58 +125,38 @@ const ContactSocial = () => {
           <Hide>
             <Social variants={titleAnimation}>
               <Circle src={Gmail} alt="Gmail icon" />
-              <h4>Gmail</h4>
-            </Social>
-          </Hide>
-          <Hide>
-            <Social variants={titleAnimation}>
               <Circle src={Instagram} alt="Instagram icon" />
-              <h4>Instagram</h4>
-            </Social>
-          </Hide>
-          <Hide>
-            <Social variants={titleAnimation}>
               <Circle src={Twitter} alt="Twitter icon" />
-              <h4>Twitter</h4>
-            </Social>
-          </Hide>
-          <Hide>
-            <Social variants={titleAnimation}>
               <Circle src={Youtube} alt="Youtube icon" />
-              <h4>YouTube</h4>
             </Social>
           </Hide>
           <AddressBox>
-            <h3>New Jersey</h3>
-            <p>
-                801 Park Ave,
-                Suit 1 Hobodean
-                NJ 070730            
-            </p>
+            <h2>New Jersey</h2>
+            <p>801 Park Ave, Suit 1 Hobodean NJ 070730</p>
           </AddressBox>
           <AddressBox>
-            <h3>E-mail</h3>
+            <h2>E-mail</h2>
             <ul>
-                <li>info@capture.com</li>
-                <li>contact@capture.com</li>           
+              <li>info@capture.com</li>
+              <li>contact@capture.com</li>
             </ul>
           </AddressBox>
           <AddressBox>
-            <h3>Phone</h3>
-            <p>
-                201-614-4108          
-            </p>
+            <h2>Phone</h2>
+            <p>201-614-4108</p>
           </AddressBox>
         </SocialLinks>
         <ContactInfo>
           <ImgContainer>
             <Image src={contact1} />
           </ImgContainer>
-          <AddressBox>
-            <p>{date.getFullYear()} Capture Group®</p>
-          </AddressBox>
         </ContactInfo>
       </Container>
+      <Footer>
+      <AddressBox>
+        <p>{date.getFullYear()} Capture Group®</p>
+      </AddressBox>
+      </Footer>
     </StyledSocial>
   );
 };
