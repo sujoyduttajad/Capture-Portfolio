@@ -34,10 +34,10 @@ const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   margin: 1em;
-  
   h4 {
     margin: 1rem;
     color: #23d997;
+    cursor: pointer;
   }
 `;
 
