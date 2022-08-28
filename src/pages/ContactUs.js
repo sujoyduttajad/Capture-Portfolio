@@ -49,6 +49,7 @@ const Circle = styled.img`
   object-fit: cover;
   opacity: 0.8;
   cursor: pointer;
+  z-index: 100;
   background-color: #333;
   &:hover {
     opacity: 1;
