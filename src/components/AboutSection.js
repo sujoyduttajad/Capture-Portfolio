@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import { Link } from "react-router-dom";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
 // Animation
 import { motion } from "framer-motion";
@@ -44,11 +45,15 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
         </motion.div>
+
         <motion.p variants={fade}>
           Grab the opportunity to capture memories that you will treasure for a
           lifetime. Why be ordinary when you can be extraordinary?
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+
+        <Link className="non-styled-link" to="/contact">
+          <motion.button variants={fade}>Contact Us</motion.button>
+        </Link>
       </Description>
       <ImageContainer>
         <motion.img
