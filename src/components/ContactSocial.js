@@ -9,12 +9,12 @@ import Gmail from "../img/gmail-logo.svg";
 import Twitter from "../img/twitter-logo.svg";
 import Instagram from "../img/instagram-logo.svg";
 import Youtube from "../img/youtube-logo.svg";
-import contact1 from '../img/contact1.jpg';
+import contact1 from "../img/contact1.jpg";
 
 const StyledSocial = styled(motion.section)`
   padding: 5rem 10rem;
-  padding-bottom: 1rem;
-  height: 100vh;
+  max-height: 100vh;
+  height: 100%;
   color: #23d997;
   background-color: #1b1b1b;
 `;
@@ -66,12 +66,13 @@ const Circle = styled.img`
     opacity: 1;
   }
 `;
-const ImgContainer = styled.div`
-
-`;
+const ImgContainer = styled.div``;
 const Image = styled(motion.img)`
-    width: 20rem;
-    height: 32rem;
+  width: 20rem;
+  height: 32rem;
+`;
+const AddressBox = styled.div`
+    display: inline-block;
 `;
 
 
@@ -116,9 +117,30 @@ const ContactSocial = () => {
           </Hide>
         </SocialLinks>
         <ContactInfo>
-            <ImgContainer>
-                <Image src={contact1} />
-            </ImgContainer>
+          <ImgContainer>
+            <Image src={contact1} />
+          </ImgContainer>
+          <AddressBox>
+            <Title>New Jersey</Title>
+            <p>
+                801 park Ave,
+                Suit 1 Hobodean
+                NJ 070730            
+            </p>
+          </AddressBox>
+          <AddressBox>
+            <Title>E-mail</Title>
+            <ul>
+                <li>info@capture.com</li>
+                <li>contact@capture.com</li>           
+            </ul>
+          </AddressBox>
+          <AddressBox>
+            <Title>Phone</Title>
+            <p>
+                201-614-4108          
+            </p>
+          </AddressBox>
         </ContactInfo>
       </Container>
     </StyledSocial>
