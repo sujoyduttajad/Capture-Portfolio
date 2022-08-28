@@ -27,12 +27,16 @@ const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  border-radius: 7px;
   background-color: #1b1b1b;
   label {
-    
+    color: #23d997;
   }
   button {
-
+    background: #23d997;
+    color: #1b1b1b;
+    padding: 0.8rem 1rem;
+    border-radius: 7px;
   }
   input{
 
@@ -68,7 +72,7 @@ const ContactForm = () => {
         <label> Your Message
           <textarea></textarea>
         </label>
-        <button></button>
+        <button>Send Message</button>
       </FormContainer>
     </ContactStyle>
   );
