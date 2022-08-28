@@ -6,9 +6,11 @@ import { pageAnimation, titleAnimation } from "../animation";
 import { Hide } from "../styles";
 
 const ContactStyle = styled(motion.section)`
-  padding: 5rem 10rem;
+  padding: 5rem;
   max-height: 100vh;
   height: 100%;
+  display: flex;
+  flex-direction: row;
   color: #1b1b1b;
   background-color: #23d997;
 `;
@@ -21,8 +23,20 @@ const FormTitle = styled(motion.div)`
     color: #353535;
   }
 `;
-const FormContainer = styled(motion.form)`
+const FormContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #1b1b1b;
+  label {
+    
+  }
+  button {
 
+  }
+  input{
+
+  }
 `;
 
 const ContactForm = () => {
@@ -33,29 +47,29 @@ const ContactForm = () => {
       animate="show"
       exit="exit"
     >
-      <Hide>
-        <FormTitle variants={titleAnimation}>
+      <FormTitle variants={titleAnimation}>
+        <Hide>
           <motion.h4>Let's work together</motion.h4>
           <motion.p>
             Contact us for any photography or videography ideas that you have.
           </motion.p>
-        </FormTitle>
-        <FormContainer>
-          <label>
-            <input name="Full Name" />
-          </label>
-          <label>
-            <input name="Your Email" />
-          </label>
-          <label>
-            <input name="Interest" />
-          </label>
-          <label>
-            <textarea></textarea>
-          </label>
-          <button></button>
-        </FormContainer>
-      </Hide>
+        </Hide>
+      </FormTitle>
+      <FormContainer>
+        <label> Your name 
+          <input name="Full Name" />
+        </label>
+        <label> Your email
+          <input name="Your Email" />
+        </label>
+        <label> Your Interests
+          <input name="Interest" />
+        </label>
+        <label> Your Message
+          <textarea></textarea>
+        </label>
+        <button></button>
+      </FormContainer>
     </ContactStyle>
   );
 };
