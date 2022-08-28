@@ -3,15 +3,13 @@ import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
-import { Hide } from "../styles";
+import { Hide, ImageContainer } from "../styles";
 // Icons
 import Gmail from "../img/gmail-logo.svg";
 import Twitter from "../img/twitter-logo.svg";
 import Instagram from "../img/instagram-logo.svg";
 import Youtube from "../img/youtube-logo.svg";
-
-
-
+import contact1 from '../img/contact1.jpg';
 
 const StyledSocial = styled(motion.section)`
   padding: 5rem 10rem;
@@ -25,6 +23,22 @@ const Title = styled.div`
   h2 {
     color: #f7f7f7;
   }
+`;
+const Container = styled(motion.div)`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+const SocialLinks = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+`;
+const ContactInfo = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 `;
 const Social = styled(motion.div)`
   display: flex;
@@ -50,6 +64,12 @@ const Circle = styled.img`
     opacity: 1;
   }
 `;
+const Image = styled(motion.img)`
+    width: 10rem;
+    height: 20rem;
+`;
+
+
 const ContactSocial = () => {
   return (
     <StyledSocial
@@ -63,32 +83,39 @@ const ContactSocial = () => {
           <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
         </Hide>
       </Title>
-      <div>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Gmail} alt="Gmail icon" />
-            <h4>Gmail</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Instagram} alt="Instagram icon" />
-            <h4>Instagram</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Twitter} alt="Twitter icon" />
-            <h4>Twitter</h4>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnimation}>
-            <Circle src={Youtube} alt="Youtube icon" />
-            <h4>YouTube</h4>
-          </Social>
-        </Hide>
-      </div>
+      <Container>
+        <SocialLinks>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Gmail} alt="Gmail icon" />
+              <h4>Gmail</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Instagram} alt="Instagram icon" />
+              <h4>Instagram</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Twitter} alt="Twitter icon" />
+              <h4>Twitter</h4>
+            </Social>
+          </Hide>
+          <Hide>
+            <Social variants={titleAnimation}>
+              <Circle src={Youtube} alt="Youtube icon" />
+              <h4>YouTube</h4>
+            </Social>
+          </Hide>
+        </SocialLinks>
+        <ContactInfo>
+            <ImageContainer>
+                <Image src={contact1} />
+            </ImageContainer>
+        </ContactInfo>
+      </Container>
     </StyledSocial>
   );
 };
