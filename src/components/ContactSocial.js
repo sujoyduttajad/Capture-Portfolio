@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
@@ -74,11 +75,12 @@ const Circle = styled.img`
   }
 `;
 const ImgContainer = styled.div`
-    margin: 0 auto;
+  margin: 0 auto;
 `;
 const Image = styled(motion.img)`
-  width: 20rem;
+  width: 25rem;
   height: 32rem;
+  object-fit: contain;
 `;
 const AddressBox = styled.div`
   display: inline-block;
@@ -102,7 +104,11 @@ const AddressBox = styled.div`
   }
 `;
 const Footer = styled.footer`
-    margin: 2rem;
+  margin: 2.5rem 2rem 0.2rem 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const ContactSocial = () => {
@@ -137,8 +143,8 @@ const ContactSocial = () => {
           <AddressBox>
             <h2>E-mail</h2>
             <ul>
-              <li>info@capture.com</li>
-              <li>contact@capture.com</li>
+              <p>info@capture.com</p>
+              <p>contact@capture.com</p>
             </ul>
           </AddressBox>
           <AddressBox>
@@ -153,9 +159,14 @@ const ContactSocial = () => {
         </ContactInfo>
       </Container>
       <Footer>
-      <AddressBox>
-        <p>{date.getFullYear()} Capture Group®</p>
-      </AddressBox>
+        <h1>
+          <NavLink id="logo" to="/">
+            Capture
+          </NavLink>
+        </h1>
+        <AddressBox>
+          <p>{date.getFullYear()} Capture Group®</p>
+        </AddressBox>
       </Footer>
     </StyledSocial>
   );
