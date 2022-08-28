@@ -13,14 +13,14 @@ import Youtube from "../img/youtube-logo.svg";
 const ContactStyle = styled(motion.section)`
   padding: 5rem 10rem;
   height: 100vh;
-  color: #353535;
+  color: #1b1b1b;
   background-color: #23d997;
 `;
 const ContactSocial = styled(motion.section)`
   padding: 5rem 10rem;
   height: 100vh;
   color: #23d997;
-  background-color: #353535;
+  background-color: #1b1b1b;
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
@@ -34,6 +34,7 @@ const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   margin: 1em;
+  cursor: pointer;
   h4 {
     margin: 1rem;
     color: #23d997;
@@ -42,11 +43,15 @@ const Social = styled(motion.div)`
 
 const Circle = styled.img`
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.5rem;
   object-fit: cover;
-  opacity: 1;
-  background-color: #f7f7f7;
+  opacity: 0.8;
+  background-color: #333;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 const FormTitle = styled(motion.div)`
