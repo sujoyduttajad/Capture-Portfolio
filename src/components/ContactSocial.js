@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
-import { Hide, ImageContainer } from "../styles";
+import { Hide } from "../styles";
 // Icons
 import Gmail from "../img/gmail-logo.svg";
 import Twitter from "../img/twitter-logo.svg";
@@ -13,6 +13,7 @@ import contact1 from '../img/contact1.jpg';
 
 const StyledSocial = styled(motion.section)`
   padding: 5rem 10rem;
+  padding-bottom: 1rem;
   height: 100vh;
   color: #23d997;
   background-color: #1b1b1b;
@@ -27,6 +28,7 @@ const Title = styled.div`
 const Container = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 `;
@@ -64,9 +66,12 @@ const Circle = styled.img`
     opacity: 1;
   }
 `;
+const ImgContainer = styled.div`
+
+`;
 const Image = styled(motion.img)`
-    width: 10rem;
-    height: 20rem;
+    width: 20rem;
+    height: 32rem;
 `;
 
 
@@ -111,9 +116,9 @@ const ContactSocial = () => {
           </Hide>
         </SocialLinks>
         <ContactInfo>
-            <ImageContainer>
+            <ImgContainer>
                 <Image src={contact1} />
-            </ImageContainer>
+            </ImgContainer>
         </ContactInfo>
       </Container>
     </StyledSocial>
