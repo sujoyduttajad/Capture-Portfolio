@@ -40,7 +40,10 @@ const SocialLinks = styled(motion.div)`
 const ContactInfo = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 50%;
+  height: 100%;
 `;
 const Social = styled(motion.div)`
   display: flex;
@@ -48,6 +51,9 @@ const Social = styled(motion.div)`
   margin: 1em;
   h4 {
     margin: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
     color: #23d997;
     cursor: pointer;
   }
@@ -73,6 +79,7 @@ const Image = styled(motion.img)`
 `;
 const AddressBox = styled.div`
     display: inline-block;
+    margin-left: 2rem;
     h3 {
         margin-top: 1rem;
         font-size: 1.75rem;
@@ -82,16 +89,21 @@ const AddressBox = styled.div`
     p {
         margin: 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 0.95rem;
+        font-weight: 200;
     }
     ul{
         margin: 0;
         list-style-type: none;
+        font-weight: 200;
     }
 `;
 
 
 const ContactSocial = () => {
+
+  const date = new Date();  
+
   return (
     <StyledSocial
       variants={pageAnimation}
@@ -156,7 +168,9 @@ const ContactSocial = () => {
           <ImgContainer>
             <Image src={contact1} />
           </ImgContainer>
-          
+          <AddressBox>
+            <p>{date.getFullYear()} Capture Group®</p>
+          </AddressBox>
         </ContactInfo>
       </Container>
     </StyledSocial>
