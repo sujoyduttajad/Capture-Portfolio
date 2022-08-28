@@ -37,9 +37,9 @@ const FormContainer = styled.form`
     color: #1b1b1b;
     padding: 0.8rem 1rem;
     border-radius: 7px;
+    margin-top: 2rem;
   }
-  input{
-
+  input {
   }
 `;
 
@@ -60,18 +60,18 @@ const ContactForm = () => {
         </Hide>
       </FormTitle>
       <FormContainer>
-        <label> Your name 
-          <input name="Full Name" />
-        </label>
-        <label> Your email
-          <input name="Your Email" />
-        </label>
-        <label> Your Interests
-          <input name="Interest" />
-        </label>
-        <label> Your Message
-          <textarea></textarea>
-        </label>
+        <label> Your name </label>
+        <input name="Full Name" />
+
+        <label> Your email</label>
+        <input name="Your Email" />
+
+        <label> Your Interests</label>
+        <input name="Interest" />
+
+        <label> Your Message</label>
+        <textarea></textarea>
+
         <button>Send Message</button>
       </FormContainer>
     </ContactStyle>
