@@ -61,7 +61,7 @@ const ContactUs = () => {
             <FormTitle variants={titleAnimation}>
               <h4>
                 Contact us for any photography or videography ideas that you
-                have. We have professionals with amazing skills.
+                have.
               </h4>
             </FormTitle>
           </Hide>
