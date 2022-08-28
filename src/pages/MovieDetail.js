@@ -37,7 +37,8 @@ const Awards = styled.div`
 const AwardStyle = styled.div`
   padding: 5rem;
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
   }
   .line {
     width: 100%;
@@ -47,6 +48,8 @@ const AwardStyle = styled.div`
   }
   p {
     padding: 2rem 0;
+    font-size: 1.2em;
+    font-weight: 300;
   }
 `;
 
