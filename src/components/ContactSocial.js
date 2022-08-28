@@ -21,9 +21,17 @@ const StyledSocial = styled(motion.section)`
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
+  margin-left: 2rem;
   color: #1b1b1b;
   h2 {
     color: #f7f7f7;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #23d997;
+    font-size: 2rem;
+    font-weight: 500;
   }
 `;
 const Container = styled(motion.div)`
@@ -110,6 +118,25 @@ const Footer = styled.footer`
   align-items: center;
   justify-content: space-between;
 `;
+const Newsletter = styled(motion.div)`    
+  input {
+    font-family: inherit;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border: 1px solid #fff;
+    &::placeholder {
+      color: #242424;
+    }
+    @media screen and (max-width: 820px) {
+      width: 100%;
+      margin: 0 0 16px 0;
+    }
+  }
+`;
 
 const ContactSocial = () => {
   const date = new Date();
@@ -128,6 +155,12 @@ const ContactSocial = () => {
       </Title>
       <Container>
         <SocialLinks>
+          <Newsletter>
+            <Title style={{ marginBottom: '0.5rem'}}>
+              <motion.h3>Join our Newsletter</motion.h3>
+              <input name="email" type="email" placeholder="Your Email" />
+            </Title>
+          </Newsletter>
           <Hide>
             <Social variants={titleAnimation}>
               <Circle src={Gmail} alt="Gmail icon" />
@@ -138,7 +171,7 @@ const ContactSocial = () => {
           </Hide>
           <AddressBox>
             <h2>New Jersey</h2>
-            <p>801 Park Ave, Suit 1 Hobodean NJ 070730</p>
+            <p>801 Park Ave, Suit 1 Hobodean, NJ 070730</p>
           </AddressBox>
           <AddressBox>
             <h2>E-mail</h2>
