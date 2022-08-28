@@ -21,6 +21,9 @@ const FormTitle = styled(motion.div)`
     color: #353535;
   }
 `;
+const FormContainer = styled(motion.form)`
+
+`;
 
 const ContactForm = () => {
   return (
@@ -37,6 +40,21 @@ const ContactForm = () => {
             Contact us for any photography or videography ideas that you have.
           </motion.p>
         </FormTitle>
+        <FormContainer>
+          <label>
+            <input name="Full Name" />
+          </label>
+          <label>
+            <input name="Your Email" />
+          </label>
+          <label>
+            <input name="Interest" />
+          </label>
+          <label>
+            <textarea></textarea>
+          </label>
+          <button></button>
+        </FormContainer>
       </Hide>
     </ContactStyle>
   );
