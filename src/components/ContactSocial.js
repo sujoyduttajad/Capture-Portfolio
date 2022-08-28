@@ -135,7 +135,6 @@ const Newsletter = styled(motion.div)`
     font-family: inherit;
     padding: 10px 20px;
     border-radius: 7px;
-    /* margin-right: 10px; */
     background-color: #f7f7f7;
     outline: none;
     border: none;
@@ -177,7 +176,7 @@ const ContactSocial = () => {
               <motion.h3>Join our Newsletter</motion.h3>
               <form>
                 <input name="email" type="email" placeholder="Your Email" />
-                <button>SEND</button>
+                <button>Subscribe</button>
               </form>
             </Title>
           </Newsletter>
