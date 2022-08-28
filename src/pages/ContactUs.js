@@ -81,25 +81,25 @@ const ContactUs = () => {
         <div>
           <Hide>
             <Social variants={titleAnimation}>
-              <Circle src={Gmail} />
+              <Circle src={Gmail} alt="Gmail icon" />
               <h4>Gmail</h4>
             </Social>
           </Hide>
           <Hide>
             <Social variants={titleAnimation}>
-              <Circle src={Instagram} />
+              <Circle src={Instagram} alt="Instagram icon" />
               <h4>Instagram</h4>
             </Social>
           </Hide>
           <Hide>
             <Social variants={titleAnimation}>
-              <Circle src={Twitter} />
+              <Circle src={Twitter} alt="Twitter icon" />
               <h4>Twitter</h4>
             </Social>
           </Hide>
           <Hide>
             <Social variants={titleAnimation}>
-              <Circle src={Youtube} />
+              <Circle src={Youtube} alt="Youtube icon" />
               <h4>YouTube</h4>
             </Social>
           </Hide>
