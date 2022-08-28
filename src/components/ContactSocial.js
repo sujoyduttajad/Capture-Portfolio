@@ -73,6 +73,21 @@ const Image = styled(motion.img)`
 `;
 const AddressBox = styled.div`
     display: inline-block;
+    h3 {
+        margin-top: 1rem;
+        font-size: 1.75rem;
+        font-weight: 300;
+        letter-spacing: 1.8px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    ul{
+        margin: 0;
+        list-style-type: none;
+    }
 `;
 
 
@@ -115,32 +130,33 @@ const ContactSocial = () => {
               <h4>YouTube</h4>
             </Social>
           </Hide>
-        </SocialLinks>
-        <ContactInfo>
-          <ImgContainer>
-            <Image src={contact1} />
-          </ImgContainer>
           <AddressBox>
-            <Title>New Jersey</Title>
+            <h3>New Jersey</h3>
             <p>
-                801 park Ave,
+                801 Park Ave,
                 Suit 1 Hobodean
                 NJ 070730            
             </p>
           </AddressBox>
           <AddressBox>
-            <Title>E-mail</Title>
+            <h3>E-mail</h3>
             <ul>
                 <li>info@capture.com</li>
                 <li>contact@capture.com</li>           
             </ul>
           </AddressBox>
           <AddressBox>
-            <Title>Phone</Title>
+            <h3>Phone</h3>
             <p>
                 201-614-4108          
             </p>
           </AddressBox>
+        </SocialLinks>
+        <ContactInfo>
+          <ImgContainer>
+            <Image src={contact1} />
+          </ImgContainer>
+          
         </ContactInfo>
       </Container>
     </StyledSocial>
