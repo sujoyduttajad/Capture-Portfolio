@@ -118,16 +118,33 @@ const Footer = styled.footer`
   align-items: center;
   justify-content: space-between;
 `;
-const Newsletter = styled(motion.div)`    
+const Newsletter = styled(motion.div)`
+  form {
+    display: flex;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+  }
+  button {
+    background: #23d997;
+    color: #1b1b1b;
+    padding: 0.8rem 1rem;
+    border-radius: 7px;
+  }
   input {
     font-family: inherit;
     padding: 10px 20px;
-    border-radius: 2px;
-    margin-right: 10px;
+    border-radius: 7px;
+    /* margin-right: 10px; */
+    background-color: #f7f7f7;
     outline: none;
     border: none;
     font-size: 16px;
+    flex-grow: 2;
     border: 1px solid #fff;
+    &:focus {
+      outline: none;
+    }
     &::placeholder {
       color: #242424;
     }
@@ -156,9 +173,12 @@ const ContactSocial = () => {
       <Container>
         <SocialLinks>
           <Newsletter>
-            <Title style={{ marginBottom: '0.5rem'}}>
+            <Title style={{ marginBottom: "0.5rem" }}>
               <motion.h3>Join our Newsletter</motion.h3>
-              <input name="email" type="email" placeholder="Your Email" />
+              <form>
+                <input name="email" type="email" placeholder="Your Email" />
+                <button>SEND</button>
+              </form>
             </Title>
           </Newsletter>
           <Hide>
