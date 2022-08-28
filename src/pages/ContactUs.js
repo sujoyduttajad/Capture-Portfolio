@@ -34,7 +34,7 @@ const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   margin: 1em;
-  cursor: pointer;
+  
   h4 {
     margin: 1rem;
     color: #23d997;
@@ -48,6 +48,7 @@ const Circle = styled.img`
   padding: 0.5rem;
   object-fit: cover;
   opacity: 0.8;
+  cursor: pointer;
   background-color: #333;
   &:hover {
     opacity: 1;
