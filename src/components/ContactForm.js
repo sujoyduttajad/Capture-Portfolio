@@ -16,7 +16,7 @@ const ContactStyle = styled(motion.section)`
   background-color: #23d997;
 `;
 const FormTitle = styled(motion.div)`
-width: 40%;
+  width: 40%;
   h4 {
     color: #1b1b1b;
     font-size: 4em;
@@ -47,7 +47,8 @@ const FormContainer = styled.form`
     border-radius: 5.55px;
     margin-top: 2rem;
   }
-  input, textarea {
+  input,
+  textarea {
     font-family: inherit;
     padding: 10px;
     border-radius: 5.55px;
@@ -91,7 +92,7 @@ const ContactForm = () => {
       </FormTitle>
       <FormContainer>
         <label> Your name </label>
-        <input name="Full Name" type="text" placeholder="John Doe"  />
+        <input name="Full Name" type="text" placeholder="John Doe" />
 
         <label> Your email</label>
         <input name="Your Email" type="email" placeholder="johndoe@xyz.com" />
