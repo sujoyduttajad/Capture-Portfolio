@@ -16,6 +16,7 @@ import {
   sliderContainer,
 } from "../animation";
 import { useScroll } from "../hooks/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const Work = styled(motion.div)`
   min-height: 100vh;
@@ -99,6 +100,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
