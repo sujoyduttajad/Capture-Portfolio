@@ -124,6 +124,8 @@ const Newsletter = styled(motion.div)`
     padding: 7px;
     border-radius: 7px;
     background-color: #f7f7f7;
+    max-width: 35rem;
+    width: 100%;
   }
   button {
     background: #23d997;
