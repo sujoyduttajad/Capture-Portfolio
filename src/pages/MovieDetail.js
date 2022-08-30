@@ -5,6 +5,7 @@ import { MovieState } from "../movieState";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const Details = styled(motion.div)`
   color: #fff;
@@ -114,6 +115,7 @@ const MovieDetail = () => {
       ) : (
         <h3>Sorry the movie you are looking is not available</h3>
       )}
+      <ScrollTop />
     </Details>
   );
 };
