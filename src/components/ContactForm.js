@@ -37,7 +37,7 @@ const FormContainer = styled.form`
   label {
     color: #23d997;
     margin-top: 1rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
     letter-spacing: 1.4px;
   }
   button {
@@ -49,7 +49,7 @@ const FormContainer = styled.form`
   }
   input, textarea {
     font-family: inherit;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5.55px;
     background-color: #f7f7f7;
     outline: none;
@@ -58,15 +58,18 @@ const FormContainer = styled.form`
     flex-grow: 2;
     border: 1px solid #fff;
     &:focus {
-      outline: none;
+      outline: 3px solid #23d997;
     }
     &::placeholder {
-      color: #242424;
+      color: #828282;
     }
     @media screen and (max-width: 820px) {
       width: 100%;
       margin: 0 0 16px 0;
     }
+  }
+  textarea {
+    resize: vertical;
   }
 `;
 
@@ -88,13 +91,13 @@ const ContactForm = () => {
       </FormTitle>
       <FormContainer>
         <label> Your name </label>
-        <input name="Full Name" />
+        <input name="Full Name" type="text" placeholder="John Doe"  />
 
         <label> Your email</label>
-        <input name="Your Email" />
+        <input name="Your Email" type="email" placeholder="johndoe@xyz.com" />
 
         <label> Your Interests</label>
-        <input name="Interest" />
+        <input name="Interest" type="text" placeholder="Photography" />
 
         <label> Your Message</label>
         <textarea></textarea>
