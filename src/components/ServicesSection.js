@@ -20,6 +20,11 @@ const Services = styled(Layout)`
     width: 70%;
     padding: 2rem 0 4rem 0;
   }
+  @media only screen and (min-width: 821px) and (max-width: 1200px) {
+      h2 {
+        font-size: 3rem;
+      }
+    }
 `;
 const Cards = styled.div`
   display: flex;
