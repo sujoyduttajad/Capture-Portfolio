@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Layout } from "../styles";
 import Toggle from "./Toggle";
+import { NavLink } from "react-router-dom";
 // Animation
 import { AnimateSharedLayout } from "framer-motion";
 import { useScroll } from "../hooks/useScroll";
@@ -51,7 +52,7 @@ const FAQ = styled(Layout)`
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
-  
+
   return (
     <FAQ
       variants={fade}
@@ -66,10 +67,19 @@ const FaqSection = () => {
       <AnimateSharedLayout>
         <Toggle title="How Do I Start?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Let's have some meaningful conversations</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
+              Easiest way to communicate with us is to email us with all the
+              information you want to include describing your idea,
+              requirements, and project budget. Nevertheless, to to secure the
+              next meetup visit the
+              <NavLink
+                className="styled-link"
+                to="/contact"
+                style={{ width: "fit-content", color: "#23d997" }}
+              >
+                Contact Us
+              </NavLink>
             </p>
           </div>
         </Toggle>
