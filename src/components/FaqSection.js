@@ -86,14 +86,18 @@ const FaqSection = () => {
         <Toggle title="Why work with us?">
           <div className="answer">
             <p>
-              <b><em>CONTENT THAT CUTS THROUGH</em></b>
+              <b>
+                <em>CONTENT THAT CUTS THROUGH</em>
+              </b>
             </p>
             <p>
               Rise above the clutter with remarkable video content that engages
               your target audience, inspires action and makes an impact.
             </p>
             <p>
-              <b><em>REACH MORE OF YOUR TARGET AUDIENCE</em></b>
+              <b>
+                <em>REACH MORE OF YOUR TARGET AUDIENCE</em>
+              </b>
             </p>
             <p>
               Content creation is just the beginning at Skeleton. We maximise
@@ -101,7 +105,9 @@ const FaqSection = () => {
               social edits, optimisation techniques and paid promotion.
             </p>
             <p>
-              <b><em>A STRESS-FREE PROCESS</em></b>
+              <b>
+                <em>A STRESS-FREE PROCESS</em>
+              </b>
             </p>
             <p>
               With over 15 years of experience creating remarkable vidoes for
@@ -112,10 +118,22 @@ const FaqSection = () => {
         </Toggle>
         <Toggle title="Different Payment Methods">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>We offer a bunch of payment methods.</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
+              We accept primarily{" "}
+              <b>
+                <em>VISA/Maestro</em>
+              </b>{" "}
+              debit card and credit card payment, which will include payback
+              points that you will earn with every subscriptions. Take a look at
+              our
+              <NavLink
+                className="styled-link"
+                to="/contact"
+                style={{ width: "fit-content", color: "#23d997" }}
+              >
+                Subscriptions & Packages
+              </NavLink>
             </p>
           </div>
         </Toggle>
