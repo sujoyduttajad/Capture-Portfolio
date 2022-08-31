@@ -20,6 +20,11 @@ export const Layout = styled(motion.div)`
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 1rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const Description = styled.div`
@@ -41,6 +46,21 @@ export const Description = styled.div`
       text-align: center;
     }
   }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 0;
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
 `;
 export const ImageContainer = styled.div`
   flex: 1;
@@ -58,6 +78,15 @@ export const ImageContainer = styled.div`
       margin-top: 2rem;
       height: 30em;
       width: 35rem;
+      object-fit: cover;
+    }
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    img {
+      margin-top: 2rem;
+      height: 30em;
+      width: 100%;
       object-fit: cover;
     }
   }
