@@ -40,6 +40,20 @@ const Services = styled(Layout)`
       text-align: left;
     }
   }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    flex-direction: column;
+    font-size: 90%;
+    div {
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+    p {
+      font-size: 98%;
+      text-align: left;
+    }
+  }
 `;
 const Cards = styled.div`
   display: flex;
