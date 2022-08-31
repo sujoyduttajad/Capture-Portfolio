@@ -112,7 +112,10 @@ const ServicesSection = () => {
               <img src={money} alt="icon" />
               <h3>Affordable</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Our prices are never been this reasonable with a complete range of
+              packages and subscriptions we make sure that you get what you spend.
+            </p>
           </Card>
         </Cards>
       </Description>
