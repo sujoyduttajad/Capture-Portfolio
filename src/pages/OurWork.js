@@ -33,6 +33,10 @@ const Work = styled(motion.div)`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 3rem 2.5rem;
   }
+    /* Mobile devices iPhone, Pixel */
+    @media only screen and (min-width: 320px) and (max-width: 539px) {
+      padding: 2.5rem 1rem;
+  }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
