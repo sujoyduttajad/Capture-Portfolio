@@ -29,6 +29,12 @@ const Services = styled(Layout)`
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
+    flex-direction: column;
+    div {
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
     p {
       font-size: 98%;
       text-align: left;
@@ -47,7 +53,7 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 15rem;
-  
+
   .icon {
     display: flex;
     align-items: center;
@@ -70,7 +76,7 @@ const ServicesSection = () => {
 
   return (
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
-      <Description style={{ paddingRight: 0, paddingLeft: "3rem"}} >
+      <Description style={{ paddingRight: 0, paddingLeft: "3rem" }}>
         <h2>
           High <span>quality</span> services
         </h2>
@@ -107,8 +113,8 @@ const ServicesSection = () => {
               <h3>Equipment</h3>
             </div>
             <p>
-              We use the best in class equipments available in the market to provide you
-              the desired results that will blew your mind.
+              We use the best in class equipments available in the market to
+              provide you the desired results that will blew your mind.
             </p>
           </Card>
           <Card className="card">
@@ -118,7 +124,8 @@ const ServicesSection = () => {
             </div>
             <p>
               Our prices are never been this reasonable with a complete range of
-              packages and subscriptions we make sure that you get what you spend.
+              packages and subscriptions we make sure that you get what you
+              spend.
             </p>
           </Card>
         </Cards>
