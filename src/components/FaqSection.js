@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 // Animation
 import { AnimateSharedLayout } from "framer-motion";
 import { useScroll } from "../hooks/useScroll";
-import { fade } from "../animation";
 
 const FAQ = styled(Layout)`
   display: block;
@@ -20,6 +19,7 @@ const FAQ = styled(Layout)`
   h4 {
     font-size: 1.7em;
     letter-spacing: 1.5px;
+    cursor: pointer;
   }
   .faq-line {
     background-color: #ccc;
@@ -29,7 +29,9 @@ const FAQ = styled(Layout)`
   }
   .question {
     padding: 0.5rem 0rem;
-    cursor: pointer;
+    svg {
+      cursor: pointer;
+    }
   }
   .answer {
     padding: 2rem 0;
@@ -37,6 +39,14 @@ const FAQ = styled(Layout)`
       padding: 1rem 0;
       font-size: 1.2rem;
       letter-spacing: 1.5px;
+    }
+    ul {
+      list-style-type: circle;
+      li {
+        margin-left: 2rem;
+        color: #23d997;
+        font-size: 1.1rem;
+      }
     }
   }
   .header-inline {
@@ -55,8 +65,6 @@ const FaqSection = () => {
 
   return (
     <FAQ
-      variants={fade}
-      animate={controls}
       initial="hidden"
       ref={element}
       className="faq"
@@ -137,12 +145,20 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="What products do you offer?">
+        <Toggle title="What services do you offer?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
+              We offer three kinds of services
+              <ul>
+                <li>Video Production</li>
+                <li>Creative Production</li>
+                <li>Emerging Media</li>
+              </ul>
+            </p>
+            <p>
+              We specialize in Brand Marketing, Corporate, Animation, Social,
+              and Product Video. Apart from that we also have trained experts in
+              Drones, AR/VR videography/photography
             </p>
           </div>
         </Toggle>
