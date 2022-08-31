@@ -143,3 +143,5 @@ Gone through a lot of design but this design was particularly used for case-stud
 - (https://www.skeletonproductions.com/insights/video-brand-guidelines)
 - (https://wearecovalent.com/services/)
 - (https://clutch.co/agencies/video-production)
+
+For more information on HTML5 video tag refer this [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
