@@ -46,8 +46,8 @@ const Title = styled.div`
     font-size: 2rem;
     font-weight: 500;
   }
-   /* Mobile devices iPhone, Pixel */
-   @media only screen and (min-width: 320px) and (max-width: 539px) {
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
     margin-left: 0;
     h2 {
       font-size: 3.2rem;
@@ -94,13 +94,9 @@ const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   margin: 1em;
-  h4 {
-    margin: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    font-weight: 400;
-    color: #23d997;
-    cursor: pointer;
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin: 2rem 0;
   }
 `;
 const Circle = styled.img`
@@ -116,6 +112,10 @@ const Circle = styled.img`
   background-color: #333;
   &:hover {
     opacity: 1;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin: auto;
   }
 `;
 const ImgContainer = styled.div`
@@ -146,6 +146,13 @@ const AddressBox = styled.div`
     list-style-type: none;
     font-weight: 200;
   }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin-left: 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 const Footer = styled.footer`
   padding: 2.5rem 2rem 0.2rem 2rem;
@@ -156,6 +163,10 @@ const Footer = styled.footer`
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
     justify-content: space-between;
     margin-left: 0;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 2rem 0;
   }
 `;
 const Newsletter = styled(motion.div)`
