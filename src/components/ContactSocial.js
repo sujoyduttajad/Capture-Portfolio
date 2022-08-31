@@ -28,6 +28,8 @@ const StyledSocial = styled(motion.section)`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 1.5rem;
+    max-height: fit-content;
+    height: 100%;
   }
 `;
 const Title = styled.div`
@@ -43,6 +45,13 @@ const Title = styled.div`
     color: #23d997;
     font-size: 2rem;
     font-weight: 500;
+  }
+   /* Mobile devices iPhone, Pixel */
+   @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin-left: 0;
+    h2 {
+      font-size: 3.2rem;
+    }
   }
 `;
 const Container = styled(motion.div)`
@@ -203,7 +212,7 @@ const ContactSocial = () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
+          <motion.h2 variants={titleAnimation}>Get in touch!</motion.h2>
         </Hide>
       </Title>
       <Container>
