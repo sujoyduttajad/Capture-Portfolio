@@ -58,17 +58,25 @@ const FAQ = styled(Layout)`
     stroke-linecap: round;
     fill: transparent;
   }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    .question, .answer {
+      width: 100%;
+      font-size: 0.7rem;
+    }
+  }
 `;
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
 
   return (
-    <FAQ
-      initial="hidden"
-      ref={element}
-      className="faq"
-    >
+    <FAQ initial="hidden" ref={element} className="faq">
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
