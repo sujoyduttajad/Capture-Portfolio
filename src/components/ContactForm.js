@@ -14,15 +14,42 @@ const ContactStyle = styled(motion.section)`
   justify-content: space-around;
   color: #1b1b1b;
   background-color: #23d997;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 5rem 2rem;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
 `;
 const FormTitle = styled(motion.div)`
   width: 40%;
   h4 {
     color: #1b1b1b;
-    font-size: 4em;
+    font-size: 4rem;
   }
   p {
     color: #353535;
+  }
+    /* Kindel and iPad tablet  */
+    @media only screen and (min-width: 540px) and (max-width: 820px) {
+    h4 {
+      font-size: 3.6rem;
+    }
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    width: 100%;
+    max-height: fit-content;
+    height: 100%;
+    h4 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 const FormContainer = styled.form`
@@ -101,7 +128,13 @@ const ContactForm = () => {
         <input name="Interest" type="text" placeholder="Photography" />
 
         <label> Your Message</label>
-        <textarea></textarea>
+        <textarea
+          name="message"
+          rows="4"
+          cols="50"
+          wrap="hard"
+          placeholder="Type your message"
+        ></textarea>
 
         <button>Send Message</button>
       </FormContainer>
