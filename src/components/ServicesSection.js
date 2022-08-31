@@ -13,6 +13,8 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 
 const Services = styled(Layout)`
+  flex-direction: row-reverse;
+  justify-content: space-between;
   h2 {
     padding-bottom: 5rem;
   }
@@ -68,7 +70,7 @@ const ServicesSection = () => {
 
   return (
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
-      <Description>
+      <Description style={{ paddingRight: 0, paddingLeft: "3rem"}} >
         <h2>
           High <span>quality</span> services
         </h2>
@@ -105,8 +107,8 @@ const ServicesSection = () => {
               <h3>Equipment</h3>
             </div>
             <p>
-              We use the best equipments available in the market to provide you
-              the best visuals possible beyond your expectations.
+              We use the best in class equipments available in the market to provide you
+              the desired results that will blew your mind.
             </p>
           </Card>
           <Card className="card">
