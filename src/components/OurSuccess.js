@@ -11,17 +11,19 @@ const OurSuccess = () => {
   return (
     <VideoContainer>
       <Description>
-        <h2 style={{ textAlign: "center", marginBottom: '5rem' }}>
+        <h2 style={{ textAlign: "center", marginBottom: "5rem" }}>
           Our <span>Work</span> speaks for <span>Us</span>
         </h2>
       </Description>
       <Video
         width="100%"
-        autoPlay="true"
+        autoPlay
         disablePictureInPicture
         disableRemotePlayback
         loop
         preload="metadata"
+        // onMouseOver={(e) => e.target.play()}
+        // onMouseOut={(e) => e.target.pause()}
       >
         <source
           src="https://player.vimeo.com/external/524033439.hd.mp4?s=22f1a7abade536bc83845b40d3181c97b8229d8d&profile_id=175"
