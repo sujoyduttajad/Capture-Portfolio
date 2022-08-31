@@ -27,6 +27,7 @@ export const Description = styled.div`
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
+    color: #f7f7f7;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
