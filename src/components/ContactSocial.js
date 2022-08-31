@@ -56,8 +56,8 @@ const SocialLinks = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 50%;
-    /* Kindel and iPad tablet  */
-    @media only screen and (min-width: 540px) and (max-width: 820px) {
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
     width: 100%;
   }
   /* Mobile devices iPhone, Pixel */
@@ -157,6 +157,10 @@ const Newsletter = styled(motion.div)`
     background-color: #f7f7f7;
     max-width: 35rem;
     width: 100%;
+    /* Mobile devices iPhone, Pixel */
+    @media only screen and (min-width: 320px) and (max-width: 539px) {
+      flex-direction: column;
+    }
   }
   button {
     background: #23d997;
