@@ -35,6 +35,10 @@ export const Description = styled.div`
     flex: 0;
     align-items: center;
     padding-right: 1rem;
+    p {
+        padding: 2rem;
+        text-align: center;
+    }
   }
 `;
 export const ImageContainer = styled.div`
