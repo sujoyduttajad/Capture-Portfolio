@@ -18,6 +18,9 @@ const StyledSocial = styled(motion.section)`
   height: 100%;
   color: #23d997;
   background-color: #1b1b1b;
+  @media only screen and (min-width: 821px) and (max-width: 1200px) {
+    padding: 5rem 4rem;
+  }
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
@@ -93,11 +96,11 @@ const Image = styled(motion.img)`
 const AddressBox = styled.div`
   display: inline-block;
   margin-left: 2rem;
-  h3 {
-    margin-top: 1rem;
-    font-size: 1.75rem;
-    font-weight: 300;
-    letter-spacing: 1.8px;
+  h2 {
+    @media only screen and (min-width: 821px) and (max-width: 1200px) {
+      font-size: 2.75rem;
+      letter-spacing: 1.8px;
+    }
   }
   p {
     margin: 0;
