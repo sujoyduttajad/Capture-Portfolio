@@ -21,6 +21,14 @@ const StyledSocial = styled(motion.section)`
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
     padding: 5rem 4rem;
   }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 5rem 2rem;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 1.5rem;
+  }
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
@@ -48,6 +56,14 @@ const SocialLinks = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 50%;
+    /* Kindel and iPad tablet  */
+    @media only screen and (min-width: 540px) and (max-width: 820px) {
+    width: 100%;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    width: 100%;
+  }
 `;
 const ContactInfo = styled(motion.div)`
   display: flex;
@@ -56,6 +72,14 @@ const ContactInfo = styled(motion.div)`
   justify-content: space-between;
   width: 50%;
   height: 100%;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    display: none;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    display: none;
+  }
 `;
 const Social = styled(motion.div)`
   display: flex;
@@ -115,13 +139,13 @@ const AddressBox = styled.div`
   }
 `;
 const Footer = styled.footer`
-  margin: 2.5rem 2rem 0.2rem 2rem;
+  padding: 2.5rem 2rem 0.2rem 2rem;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: 0;
   }
 `;
