@@ -83,12 +83,30 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="Why work with us?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-              dolor.
+              <b><em>CONTENT THAT CUTS THROUGH</em></b>
+            </p>
+            <p>
+              Rise above the clutter with remarkable video content that engages
+              your target audience, inspires action and makes an impact.
+            </p>
+            <p>
+              <b><em>REACH MORE OF YOUR TARGET AUDIENCE</em></b>
+            </p>
+            <p>
+              Content creation is just the beginning at Skeleton. We maximise
+              your video content's reach throughout the buyer's journey with
+              social edits, optimisation techniques and paid promotion.
+            </p>
+            <p>
+              <b><em>A STRESS-FREE PROCESS</em></b>
+            </p>
+            <p>
+              With over 15 years of experience creating remarkable vidoes for
+              world-class brands, our process is simple, smooth and
+              straightforward from day one. No worries.
             </p>
           </div>
         </Toggle>
