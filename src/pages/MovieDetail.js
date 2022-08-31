@@ -37,6 +37,12 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    min-height: fit-content;
+    margin: 0;
+    flex-direction: column;
+  }
 `;
 
 const AwardStyle = styled.div`
@@ -90,7 +96,7 @@ const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
   console.log(url);
-  const [movies, setMovies] = useState(MovieState);
+  const [movies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
