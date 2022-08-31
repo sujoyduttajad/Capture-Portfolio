@@ -36,8 +36,8 @@ export const Description = styled.div`
     align-items: center;
     padding-right: 1rem;
     p {
-        padding: 2rem;
-        text-align: center;
+      padding: 2rem;
+      text-align: center;
     }
   }
 `;
