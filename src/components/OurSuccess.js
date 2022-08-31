@@ -3,14 +3,20 @@ import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
 
-
 const VideoContainer = styled.div``;
 const Video = styled(motion.video)``;
 
 const OurSuccess = () => {
   return (
     <VideoContainer>
-      <Video controls width="100%" >
+      <Video
+        width="100%"
+        autoPlay="true"
+        disablePictureInPicture
+        disableRemotePlayback
+        loop
+        preload="metadata"
+      >
         <source
           src="https://player.vimeo.com/external/524033439.hd.mp4?s=22f1a7abade536bc83845b40d3181c97b8229d8d&profile_id=175"
           type="video/mp4"
