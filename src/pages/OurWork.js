@@ -29,6 +29,10 @@ const Work = styled(motion.div)`
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
     padding: 3rem 5rem;
   }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 3rem 2.5rem;
+  }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
@@ -43,6 +47,10 @@ const Movie = styled(motion.div)`
     object-fit: cover;
     @media only screen and (min-width: 821px) and (max-width: 1200px) {
       height: 30vh;
+    }
+    /* Kindel and iPad tablet  */
+    @media only screen and (min-width: 540px) and (max-width: 820px) {
+      height: 50vh;
     }
   }
 `;
