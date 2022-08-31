@@ -26,6 +26,10 @@ const Headline = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    min-height: fit-content;
+  }
 `;
 const Awards = styled.div`
   min-height: 80vh;
@@ -60,6 +64,14 @@ const ImageDisplay = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
+  }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    min-height: fit-content;
+    img {
+      min-height: 10vh;
+      height: 40vh;
+    }
   }
 `;
 
@@ -97,7 +109,9 @@ const MovieDetail = () => {
         <div>
           <Headline>
             <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="movie" />
+            <ImageDisplay>
+              <img src={movie.mainImg} alt="movie" />
+            </ImageDisplay>
           </Headline>
           <Awards>
             {movie.awards.map((award, index) => (
