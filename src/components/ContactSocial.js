@@ -120,6 +120,10 @@ const Footer = styled.footer`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (min-width: 821px) and (max-width: 1200px) {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 `;
 const Newsletter = styled(motion.div)`
   form {
@@ -152,9 +156,9 @@ const Newsletter = styled(motion.div)`
     &::placeholder {
       color: #242424;
     }
-    @media screen and (max-width: 820px) {
+    @media only screen and (min-width: 821px) and (max-width: 1200px) {
       width: 100%;
-      margin: 0 0 16px 0;
+      padding: 8px 10px;
     }
   }
 `;
