@@ -26,6 +26,9 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0;
   }
+  @media only screen and (min-width: 821px) and (max-width: 1200px) {
+    padding: 3rem 5rem;
+  }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
@@ -38,6 +41,9 @@ const Movie = styled(motion.div)`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    @media only screen and (min-width: 821px) and (max-width: 1200px) {
+      height: 30vh;
+    }
   }
 `;
 
