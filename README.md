@@ -140,3 +140,5 @@ Here, ```toggle``` is the state
 Gone through a lot of design but this design was particularly used for case-study
 
 [Case-Study](https://dribbble.com/shots/18995515-Photographer-Portfolio-Website-Design)
+
+(https://www.skeletonproductions.com/insights/video-brand-guidelines)
