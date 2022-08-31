@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Layout, Description } from "../styles";
+import { Layout, Description, ImageContainer } from "../styles";
 // Animation
 import { motion } from "framer-motion";
 import { useScroll } from "../hooks/useScroll";
-import { fade, photoAnimation} from "../animation";
+import { fade, photoAnimation } from "../animation";
 //Import Icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
@@ -21,14 +21,26 @@ const Services = styled(Layout)`
     padding: 2rem 0 4rem 0;
   }
   @media only screen and (min-width: 821px) and (max-width: 1200px) {
-      h2 {
-        font-size: 3rem;
-      }
+    h2 {
+      font-size: 3rem;
     }
+  }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    p {
+      font-size: 98%;
+    }
+  }
 `;
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const Card = styled.div`
   flex-basis: 15rem;
@@ -90,7 +102,7 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <div className="image">
+      <ImageContainer>
         <motion.img
           variants={photoAnimation}
           initial="hidden"
@@ -98,7 +110,7 @@ const ServicesSection = () => {
           src={home2}
           alt=""
         />
-      </div>
+      </ImageContainer>
     </Services>
   );
 };
