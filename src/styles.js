@@ -8,6 +8,9 @@ export const Layout = styled(motion.div)`
     justify-content: space-between;
     padding: 5rem 10rem;
     color: white;
+    @media only screen and (min-width: 821px) and (max-width: 1200px) {
+      padding: 3rem 5rem;
+    }
 `;
 export const Description = styled.div`
     flex: 1;
