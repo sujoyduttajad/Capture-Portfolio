@@ -45,6 +45,7 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 15rem;
+  
   .icon {
     display: flex;
     align-items: center;
@@ -54,10 +55,11 @@ const Card = styled.div`
     background: white;
     color: #333;
     padding: 1rem;
+    font-size: 1rem;
   }
   p {
-    margin: 0;
-    font-size: 1.15rem;
+    margin: 0 !important;
+    font-size: 1rem;
   }
 `;
 
