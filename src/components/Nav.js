@@ -17,20 +17,24 @@ const Navbar = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    li {
+      padding-left: 2rem;
+      position: relative;
+      color: #23d997;
+    }
   }
-  li {
-    padding-left: 2rem;
-    position: relative;
-    color: #23d997;
-  }
-   /* Mobile devices iPhone, Pixel */
-   @media only screen and (min-width: 320px) and (max-width: 539px) {
+
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 1rem;
     h1 {
       font-size: 0.5rem;
     }
-    li {
-      font-size: 0.5em;
+    ul {
+      li {
+        font-size: 0.5em;
+        display: none;
+      }
     }
   }
 `;
