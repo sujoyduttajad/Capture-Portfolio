@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import home1 from "../img/home1.png";
 import { Link } from "react-router-dom";
 import { Layout, Description, ImageContainer, Hide } from "../styles";
@@ -6,6 +7,14 @@ import { Layout, Description, ImageContainer, Hide } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../animation";
 import Wave from "./Wave";
+
+const Header = styled(motion.div)`
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+`;
 
 const AboutSection = () => {
   // Framer-motion variant
@@ -25,7 +34,7 @@ const AboutSection = () => {
   return (
     <Layout>
       <Description style={{ zIndex: 2 }}>
-        <motion.div
+        <Header
           variants={container}
           initial="hidden"
           animate="show"
@@ -44,7 +53,7 @@ const AboutSection = () => {
               <span>true.</span>
             </motion.h2>
           </Hide>
-        </motion.div>
+        </Header>
 
         <motion.p variants={fade}>
           Grab the opportunity to capture memories that you will treasure for a
