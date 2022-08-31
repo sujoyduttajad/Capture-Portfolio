@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
+import { Description } from "../styles";
 
 const VideoContainer = styled.div``;
 const Video = styled(motion.video)``;
@@ -9,6 +10,11 @@ const Video = styled(motion.video)``;
 const OurSuccess = () => {
   return (
     <VideoContainer>
+      <Description>
+        <h2 style={{ textAlign: "center", marginBottom: '5rem' }}>
+          Our <span>Work</span> speaks for <span>Us</span>
+        </h2>
+      </Description>
       <Video
         width="100%"
         autoPlay="true"
