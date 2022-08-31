@@ -80,7 +80,7 @@ const ServicesSection = () => {
                 src={clock}
                 alt="icon"
               />
-              <h3>Efficient</h3>
+              <h3>Performance</h3>
             </div>
             <p>
               We understand exactly how your videos are performing across a
@@ -100,9 +100,12 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon" />
-              <h3>Diaphragm</h3>
+              <h3>Equipment</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              We use the best equipments available in the market to provide you
+              the best visuals possible beyond your expectations.
+            </p>
           </Card>
           <Card className="card">
             <div className="icon">
