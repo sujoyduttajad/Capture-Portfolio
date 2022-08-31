@@ -44,7 +44,7 @@ const FormTitle = styled(motion.div)`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     width: 100%;
-    
+
     h4 {
       font-size: 2.5rem;
     }
@@ -100,9 +100,13 @@ const FormContainer = styled.form`
   textarea {
     resize: vertical;
   }
-    /* Mobile devices iPhone, Pixel */
-    @media only screen and (min-width: 320px) and (max-width: 539px) {
-      padding: 1.5rem;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    margin-left: 1rem;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 1.5rem;
   }
 `;
 
