@@ -33,9 +33,13 @@ const Work = styled(motion.div)`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 3rem 2.5rem;
   }
-    /* Mobile devices iPhone, Pixel */
-    @media only screen and (min-width: 320px) and (max-width: 539px) {
-      padding: 2.5rem 1rem;
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    padding: 2.5rem 1rem;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 `;
 const Movie = styled(motion.div)`
@@ -55,6 +59,18 @@ const Movie = styled(motion.div)`
     /* Kindel and iPad tablet  */
     @media only screen and (min-width: 540px) and (max-width: 820px) {
       height: 50vh;
+    }
+    /* Mobile devices iPhone, Pixel */
+    @media only screen and (min-width: 320px) and (max-width: 539px) {
+      object-fit: cover;
+      height: 70vh;
+    }
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    margin-bottom: 0;
+    .line {
+      margin-bottom: 1rem;
     }
   }
 `;
