@@ -29,6 +29,7 @@ const Services = styled(Layout)`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     p {
       font-size: 98%;
+      text-align: left;
     }
   }
 `;
@@ -39,7 +40,7 @@ const Cards = styled.div`
   @media only screen and (min-width: 540px) and (max-width: 820px) {
     padding: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 `;
 const Card = styled.div`
@@ -53,6 +54,10 @@ const Card = styled.div`
     background: white;
     color: #333;
     padding: 1rem;
+  }
+  p {
+    margin: 0;
+    font-size: 1.15rem;
   }
 `;
 
@@ -77,14 +82,20 @@ const ServicesSection = () => {
               />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              We understand exactly how your videos are performing across a
+              multitude of channels? We’re here to crunch the numbers for you..
+            </p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Alone we can do so little, together we can do so much. Let's work
+              together and turn your ideas and dreams into reality.
+            </p>
           </Card>
           <Card className="card">
             <div className="icon">
