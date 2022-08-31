@@ -29,6 +29,14 @@ export const Description = styled.div`
     h2 {
         font-weight: lighter;
     }
+    /* Kindel and iPad tablet  */
+    @media only screen and (min-width: 540px) and (max-width: 820px) {
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+        align-items: center;
+        padding-right: 1rem;
+    }
 `; 
 export const ImageContainer = styled.div`
     flex: 1;
@@ -44,8 +52,9 @@ export const ImageContainer = styled.div`
      @media only screen and (min-width: 540px) and (max-width: 820px) {
         img {
             margin-top: 2rem;
-            height: 100%;
+            height: 30em;
             width: 35rem;
+            object-fit: cover;
         }
     }
 `;
