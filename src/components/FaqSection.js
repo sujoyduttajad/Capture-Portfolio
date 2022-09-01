@@ -87,7 +87,7 @@ const FaqSection = () => {
             <p>
               Easiest way to communicate with us is to email us with all the
               information you want to include describing your idea,
-              requirements, and project budget. Nevertheless, to to secure the
+              requirements, and project budget. Nevertheless, to secure the
               next meetup visit the
               <NavLink
                 className="styled-link"
