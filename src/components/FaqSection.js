@@ -145,7 +145,7 @@ const FaqSection = () => {
               our
               <NavLink
                 className="styled-link"
-                to="/contact"
+                to="/subspack"
                 style={{ width: "fit-content", color: "#23d997" }}
               >
                 Subscriptions & Packages
