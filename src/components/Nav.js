@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { pageAnimation, titleAnimation } from "../animation";
+import { pageAnimation, titleAnimation, fade } from "../animation";
 
 const Navbar = styled.nav`
   min-height: 10vh;
@@ -71,10 +71,10 @@ const Navmenu = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  height: 100vh;
+  justify-content: space-evenly;
+  height: 100%;
   width: 100vw;
-  overflow-y: hidden;
+  overflow: hidden;
   position: fixed;
   z-index: 5001;
   font-size: 5rem;
@@ -82,10 +82,32 @@ const Navmenu = styled(motion.div)`
   ul {
     list-style: none;
     li {
-      padding-left: 2rem;
+      padding-left: 1.6rem;
       position: relative;
       color: #23d997;
     }
+  }
+`;
+
+const Contact = styled(motion.div)`
+  padding: 1rem;
+  width: 100vw;
+  color: #282828;
+  background-color: #23d997;
+  h2 {
+    font-size: 50%;
+    margin: 0;
+  }
+  p {
+    color: #282828;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    border: none;
+    margin: 2rem 0;
+    background-color: #282828;
+    /* padding-left: 0; */
   }
 `;
 
@@ -147,8 +169,8 @@ const Nav = () => {
                 className="menu-link"
                 to="/"
                 onClick={() => setIsClicked(!isClicked)}
-                style={isClicked => ({
-                  color: isClicked && path === '/' ? "#23d997" : "#eee"
+                style={(isClicked) => ({
+                  color: isClicked && path === "/" ? "#23d997" : "#eee",
                 })}
               >
                 About Us
@@ -159,8 +181,8 @@ const Nav = () => {
                 className="menu-link"
                 to="/work"
                 onClick={() => setIsClicked(!isClicked)}
-                style={isClicked => ({
-                  color: isClicked && path === '/work' ? "#23d997" : "#eee"
+                style={(isClicked) => ({
+                  color: isClicked && path === "/work" ? "#23d997" : "#eee",
                 })}
               >
                 Our Work
@@ -171,8 +193,8 @@ const Nav = () => {
                 className="menu-link"
                 to="/contact"
                 onClick={() => setIsClicked(!isClicked)}
-                style={isClicked => ({
-                  color: isClicked && path === '/contact' ? "#23d997" : "#eee"
+                style={(isClicked) => ({
+                  color: isClicked && path === "/contact" ? "#23d997" : "#eee",
                 })}
               >
                 Contact Us
@@ -183,14 +205,23 @@ const Nav = () => {
                 className="menu-link"
                 to="/subspack"
                 onClick={() => setIsClicked(!isClicked)}
-                style={isClicked => ({
-                  color: isClicked && path === '/subspack' ? "#23d997" : "#eee"
+                style={(isClicked) => ({
+                  color: isClicked && path === "/subspack" ? "#23d997" : "#eee",
                 })}
               >
                 Subscriptions
               </NavLink>
             </li>
           </ul>
+          <Contact variants={titleAnimation} initial="hidden" animate="show">
+            <p>Have an idea?</p>
+            <h2>Let's Start something great together!</h2>
+            <NavLink className="non-styled-link" to="/contact">
+              <motion.button variants={fade}>
+                Book a call with us today
+              </motion.button>
+            </NavLink>
+          </Contact>
         </Navmenu>
       ) : (
         ""
