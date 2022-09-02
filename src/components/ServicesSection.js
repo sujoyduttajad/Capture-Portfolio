@@ -108,11 +108,15 @@ const Card = styled.div`
 `;
 
 const Image = styled(ImageContainer)`
-  img {
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    img {
     width: 80vw;
     height: 100%;
     margin-bottom: 1rem;
   }
+  }
+  
 `;
 
 const ServicesSection = () => {
