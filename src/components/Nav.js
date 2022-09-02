@@ -102,9 +102,9 @@ const Nav = () => {
         </h1>
         <div className="box" onClick={() => setIsClicked(!isClicked)}>
           <div className={`btn ${isClicked ? 'active' : 'not-active'}`} >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className="span"></span>
+            <span className="span"></span>
+            <span className="span"></span>
           </div>
         </div>
       </NavbarMobile>
