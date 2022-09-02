@@ -38,7 +38,7 @@ code {
 }
 
 .menu-link {
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
   margin: 1rem 0;
