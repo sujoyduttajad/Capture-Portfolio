@@ -73,7 +73,7 @@ const FAQ = styled(Layout)`
 `;
 
 const FaqSection = () => {
-  const [element, controls] = useScroll();
+  const [element] = useScroll();
 
   return (
     <FAQ initial="hidden" ref={element} className="faq">
