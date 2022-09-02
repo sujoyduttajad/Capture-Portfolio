@@ -22,8 +22,6 @@ const OurSuccess = () => {
         disableRemotePlayback
         loop
         preload="metadata"
-        // onMouseOver={(e) => e.target.play()}
-        // onMouseOut={(e) => e.target.pause()}
       >
         <source
           src="https://player.vimeo.com/external/524033439.hd.mp4?s=22f1a7abade536bc83845b40d3181c97b8229d8d&profile_id=175"
