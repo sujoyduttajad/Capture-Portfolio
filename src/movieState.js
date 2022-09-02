@@ -5,7 +5,7 @@ import athlete2 from "./img/athlete2.png";
 import goodtimes2 from "./img/good-times2.jpg";
 import theracer2 from "./img/the-racer2.jpg";
 
-// This place is where you will add content to the individual movie Awards or Reviews
+// This is where you will add content to the individual movie Awards or Reviews
 export const MovieState = () => {
   return [
     {
