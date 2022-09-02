@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
@@ -91,6 +91,8 @@ const Navmenu = styled(motion.div)`
 
 const Nav = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const location = useLocation();
+  const path = location.pathname;
 
   return (
     <>
@@ -146,7 +148,7 @@ const Nav = () => {
                 to="/"
                 onClick={() => setIsClicked(!isClicked)}
                 style={isClicked => ({
-                  color: isClicked ? "#23d997" : "#eee"
+                  color: isClicked && path === '/' ? "#23d997" : "#eee"
                 })}
               >
                 About Us
@@ -158,7 +160,7 @@ const Nav = () => {
                 to="/work"
                 onClick={() => setIsClicked(!isClicked)}
                 style={isClicked => ({
-                  color: isClicked ? "#23d997" : "#eee"
+                  color: isClicked && path === '/work' ? "#23d997" : "#eee"
                 })}
               >
                 Our Work
@@ -170,7 +172,7 @@ const Nav = () => {
                 to="/contact"
                 onClick={() => setIsClicked(!isClicked)}
                 style={isClicked => ({
-                  color: isClicked ? "#23d997" : "#eee"
+                  color: isClicked && path === '/contact' ? "#23d997" : "#eee"
                 })}
               >
                 Contact Us
@@ -182,7 +184,7 @@ const Nav = () => {
                 to="/subspack"
                 onClick={() => setIsClicked(!isClicked)}
                 style={isClicked => ({
-                  color: isClicked ? "#23d997" : "#eee"
+                  color: isClicked && path === '/subspack' ? "#23d997" : "#eee"
                 })}
               >
                 Subscriptions
