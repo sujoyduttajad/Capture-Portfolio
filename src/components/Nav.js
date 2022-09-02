@@ -141,22 +141,51 @@ const Nav = () => {
         >
           <ul>
             <li>
-              <NavLink className="menu-link" to="/">
+              <NavLink
+                className="menu-link"
+                to="/"
+                onClick={() => setIsClicked(!isClicked)}
+                style={isClicked => ({
+                  color: isClicked ? "#23d997" : "#eee",
+                  textDecoration: isClicked ? "underline" : "none"
+                })}
+              >
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink className="menu-link" to="/work">
+              <NavLink
+                className="menu-link"
+                to="/work"
+                onClick={() => setIsClicked(!isClicked)}
+                style={isClicked => ({
+                  color: isClicked ? "#23d997" : "#eee"
+                })}
+              >
                 Our Work
               </NavLink>
             </li>
             <li>
-              <NavLink className="menu-link" to="/contact">
+              <NavLink
+                className="menu-link"
+                to="/contact"
+                onClick={() => setIsClicked(!isClicked)}
+                style={isClicked => ({
+                  color: isClicked ? "#23d997" : "#eee"
+                })}
+              >
                 Contact Us
               </NavLink>
             </li>
             <li>
-              <NavLink className="menu-link" to="/subspack">
+              <NavLink
+                className="menu-link"
+                to="/subspack"
+                onClick={() => setIsClicked(!isClicked)}
+                style={isClicked => ({
+                  color: isClicked ? "#23d997" : "#eee"
+                })}
+              >
                 Subscriptions
               </NavLink>
             </li>
