@@ -146,8 +146,7 @@ const Nav = () => {
                 to="/"
                 onClick={() => setIsClicked(!isClicked)}
                 style={isClicked => ({
-                  color: isClicked ? "#23d997" : "#eee",
-                  textDecoration: isClicked ? "underline" : "none"
+                  color: isClicked ? "#23d997" : "#eee"
                 })}
               >
                 About Us
