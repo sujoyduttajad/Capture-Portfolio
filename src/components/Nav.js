@@ -64,8 +64,28 @@ const NavbarMobile = styled.div`
   }
 `;
 
-const Nav = () => {
+const Navmenu = styled.div`
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  font-size: 5rem;
+  ul {
+    list-style: none;
+    li {
+      padding-left: 2rem;
+      position: relative;
+      color: #23d997;
+      
+    }
+  }
+`;
 
+const Nav = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
@@ -101,13 +121,36 @@ const Nav = () => {
           </NavLink>
         </h1>
         <div className="box" onClick={() => setIsClicked(!isClicked)}>
-          <div className={`btn ${isClicked ? 'active' : 'not-active'}`} >
+          <div className={`btn ${isClicked ? "active" : "not-active"}`}>
             <span className="span"></span>
             <span className="span"></span>
             <span className="span"></span>
           </div>
         </div>
       </NavbarMobile>
+      {isClicked ? (
+        <Navmenu>
+          <ul>
+            <li>
+              <NavLink className="menu-link"  to="/">
+                About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu-link" to="/work">
+                Our Work
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu-link" to="/contact">
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+        </Navmenu>
+      ) : (
+        ""
+      )}
     </>
   );
 };
