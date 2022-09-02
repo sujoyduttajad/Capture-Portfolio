@@ -74,13 +74,13 @@ const Navmenu = styled.div`
   overflow-y: hidden;
   scroll-behavior: smooth;
   font-size: 5rem;
+  transition: 0.5s ease-in-out;
   ul {
     list-style: none;
     li {
       padding-left: 2rem;
       position: relative;
       color: #23d997;
-      
     }
   }
 `;
@@ -132,7 +132,7 @@ const Nav = () => {
         <Navmenu>
           <ul>
             <li>
-              <NavLink className="menu-link"  to="/">
+              <NavLink className="menu-link" to="/">
                 About Us
               </NavLink>
             </li>
@@ -144,6 +144,11 @@ const Nav = () => {
             <li>
               <NavLink className="menu-link" to="/contact">
                 Contact Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu-link" to="/subspack">
+                Subscriptions
               </NavLink>
             </li>
           </ul>
