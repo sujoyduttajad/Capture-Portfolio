@@ -37,6 +37,21 @@ code {
   transform: none;
 }
 
+.menu-link {
+  text-decoration: none !important;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  color: #eee;
+}
+.menu-link::after {
+  background-color: transparent;
+  transform: none;
+}
+.menu-link:hover::after {
+  transform: none;
+}
+
 /* Hamberger icon animation */
 .box {
   border-radius: 2px;
