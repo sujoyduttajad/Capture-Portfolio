@@ -23,7 +23,6 @@ const Navbar = styled.nav`
       color: #23d997;
     }
   }
-
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     padding: 1rem;
@@ -39,32 +38,54 @@ const Navbar = styled.nav`
   }
 `;
 
+const NavbarMobile = styled.div`
+  display: none;
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    h1 {
+      font-size: 0.5rem;
+    }
+    ul {
+      li {
+        font-size: 0.5em;
+        display: none;
+      }
+    }
+  }
+`;
+
 const Nav = () => {
   return (
-    <Navbar>
-      <h1>
-        <NavLink id="logo" to="/">
-          Capture
-        </NavLink>
-      </h1>
-      <ul>
-        <li>
-          <NavLink className="styled-link" to="/">
-            About Us
+    <>
+      <Navbar>
+        <h1>
+          <NavLink id="logo" to="/">
+            Capture
           </NavLink>
-        </li>
-        <li>
-          <NavLink className="styled-link" to="/work">
-            Our Work
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="styled-link" to="/contact">
-            Contact Us
-          </NavLink>
-        </li>
-      </ul>
-    </Navbar>
+        </h1>
+        <ul>
+          <li>
+            <NavLink className="styled-link" to="/">
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="styled-link" to="/work">
+              Our Work
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="styled-link" to="/contact">
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
+      </Navbar>
+      <NavbarMobile></NavbarMobile>
+    </>
   );
 };
 
