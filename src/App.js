@@ -9,6 +9,7 @@ import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 // Animation
 import { AnimatePresence } from "framer-motion";
+import Subscriptions from "./pages/Subscriptions";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/contact" exact>
             <ContactUs />
+          </Route>
+          <Route path="/subspack" exact>
+            <Subscriptions />
           </Route>
           <Route path="/work/:id" exact>
             <MovieDetail />
