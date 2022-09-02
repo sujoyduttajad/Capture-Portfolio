@@ -55,6 +55,9 @@ const Services = styled(Layout)`
       padding-bottom: 3rem;
       font-size: 1.9rem;
     }
+    img {
+      width: 10%;
+    }
   }
 `;
 const Cards = styled.div`
@@ -90,18 +93,33 @@ const Card = styled.div`
     margin: 0 !important;
     font-size: 1rem;
   }
-    /* Mobile devices iPhone, Pixel */
-    @media only screen and (min-width: 320px) and (max-width: 539px) {
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
     flex-direction: column;
     font-size: 20%;
+    p {
+      padding: -1rem;
+    }
+    h3 {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+`;
+
+const Image = styled(ImageContainer)`
+  img {
+    width: 80vw;
+    height: 100%;
+    margin-bottom: 1rem;
   }
 `;
 
 const ServicesSection = () => {
-  const [element, controls] = useScroll();
+  const [element] = useScroll();
 
   return (
-    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+    <Services variants={fade} initial="hidden" ref={element}>
       <Description style={{ paddingRight: 0, paddingLeft: "3rem" }}>
         <h2>
           High <span>quality</span> services
@@ -156,7 +174,7 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <ImageContainer>
+      <Image>
         <motion.img
           variants={photoAnimation}
           initial="hidden"
@@ -164,7 +182,7 @@ const ServicesSection = () => {
           src={home2}
           alt=""
         />
-      </ImageContainer>
+      </Image>
     </Services>
   );
 };
