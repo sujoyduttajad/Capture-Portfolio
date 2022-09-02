@@ -216,7 +216,11 @@ const Nav = () => {
           <Contact variants={titleAnimation} initial="hidden" animate="show">
             <p>Have an idea?</p>
             <h2>Let's Start something great together!</h2>
-            <NavLink className="non-styled-link" to="/contact">
+            <NavLink
+              className="non-styled-link"
+              to="/contact"
+              onClick={() => setIsClicked(!isClicked)}
+            >
               <motion.button variants={fade}>
                 Book a call with us today
               </motion.button>
