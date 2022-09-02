@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -25,6 +25,7 @@ const Navbar = styled.nav`
   }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
+    display: none;
     padding: 1rem;
     h1 {
       font-size: 0.5rem;
@@ -43,8 +44,14 @@ const NavbarMobile = styled.div`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: #282828;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 5000;
     h1 {
       font-size: 0.5rem;
     }
@@ -58,6 +65,9 @@ const NavbarMobile = styled.div`
 `;
 
 const Nav = () => {
+
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <>
       <Navbar>
@@ -84,7 +94,20 @@ const Nav = () => {
           </li>
         </ul>
       </Navbar>
-      <NavbarMobile></NavbarMobile>
+      <NavbarMobile>
+        <h1>
+          <NavLink id="logo" to="/">
+            Capture
+          </NavLink>
+        </h1>
+        <div className="box" onClick={() => setIsClicked(!isClicked)}>
+          <div className={`btn ${isClicked ? 'active' : 'not-active'}`} >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </NavbarMobile>
     </>
   );
 };
