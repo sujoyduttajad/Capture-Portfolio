@@ -53,7 +53,7 @@ const Services = styled(Layout)`
     }
     h2 {
       padding-bottom: 3rem;
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 `;
