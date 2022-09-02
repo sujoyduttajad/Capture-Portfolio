@@ -43,15 +43,17 @@ const Services = styled(Layout)`
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     flex-direction: column;
-    font-size: 90%;
+    font-size: 20%;
     div {
-      &:first-of-type {
-        padding-left: 0;
-      }
+      padding-left: 0;
     }
     p {
-      font-size: 98%;
+      font-size: 48%;
       text-align: left;
+    }
+    h2 {
+      padding-bottom: 3rem;
+      font-size: 2rem;
     }
   }
 `;
@@ -63,6 +65,11 @@ const Cards = styled.div`
     padding: 1rem;
     align-items: center;
     justify-content: space-around;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    flex-direction: column;
+    font-size: 20%;
   }
 `;
 const Card = styled.div`
@@ -82,6 +89,11 @@ const Card = styled.div`
   p {
     margin: 0 !important;
     font-size: 1rem;
+  }
+    /* Mobile devices iPhone, Pixel */
+    @media only screen and (min-width: 320px) and (max-width: 539px) {
+    flex-direction: column;
+    font-size: 20%;
   }
 `;
 
