@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { pageAnimation, titleAnimation } from "../animation";
 
 const Navbar = styled.nav`
   min-height: 10vh;
@@ -64,15 +66,17 @@ const NavbarMobile = styled.div`
   }
 `;
 
-const Navmenu = styled.div`
+const Navmenu = styled(motion.div)`
   background-color: #282828;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   height: 100vh;
+  width: 100vw;
   overflow-y: hidden;
-  scroll-behavior: smooth;
+  position: fixed;
+  z-index: 5001;
   font-size: 5rem;
   transition: 0.5s ease-in-out;
   ul {
@@ -129,7 +133,12 @@ const Nav = () => {
         </div>
       </NavbarMobile>
       {isClicked ? (
-        <Navmenu>
+        <Navmenu
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <ul>
             <li>
               <NavLink className="menu-link" to="/">
