@@ -28,10 +28,10 @@ function App() {
           <Route path="/work" exact>
             <OurWork />
           </Route>
-          <Route path="/contact">
+          <Route path="/contact" exact>
             <ContactUs />
           </Route>
-          <Route path="/work/:id">
+          <Route path="/work/:id" exact>
             <MovieDetail />
           </Route>
         </Switch>
