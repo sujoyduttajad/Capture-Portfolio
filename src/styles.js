@@ -71,6 +71,7 @@ export const ImageContainer = styled.div`
     height: 45em;
     object-fit: cover;
     -webkit-user-drag: none;
+    margin-top: 1rem;
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
