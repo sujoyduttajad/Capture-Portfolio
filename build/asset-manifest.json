@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dae2ceb1.chunk.css",
+    "main.js": "/static/js/main.a595b186.chunk.js",
+    "main.js.map": "/static/js/main.a595b186.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.753c6e37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.753c6e37.js.map",
+    "static/js/2.c12e65ec.chunk.js": "/static/js/2.c12e65ec.chunk.js",
+    "static/js/2.c12e65ec.chunk.js.map": "/static/js/2.c12e65ec.chunk.js.map",
+    "static/js/3.bea1fdf4.chunk.js": "/static/js/3.bea1fdf4.chunk.js",
+    "static/js/3.bea1fdf4.chunk.js.map": "/static/js/3.bea1fdf4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.dae2ceb1.chunk.css.map": "/static/css/main.dae2ceb1.chunk.css.map",
+    "static/js/2.c12e65ec.chunk.js.LICENSE.txt": "/static/js/2.c12e65ec.chunk.js.LICENSE.txt",
+    "static/media/athlete-small.9c7a85d4.png": "/static/media/athlete-small.9c7a85d4.png",
+    "static/media/athlete2.b216a5ad.png": "/static/media/athlete2.b216a5ad.png",
+    "static/media/clock.4b7cde7e.svg": "/static/media/clock.4b7cde7e.svg",
+    "static/media/contact1.e788e470.jpg": "/static/media/contact1.e788e470.jpg",
+    "static/media/diaphragm.db801491.svg": "/static/media/diaphragm.db801491.svg",
+    "static/media/gmail-logo.c49efdc2.svg": "/static/media/gmail-logo.c49efdc2.svg",
+    "static/media/good-times2.4ea1be17.jpg": "/static/media/good-times2.4ea1be17.jpg",
+    "static/media/goodtimes-small.94ab060d.png": "/static/media/goodtimes-small.94ab060d.png",
+    "static/media/home1.9836de69.png": "/static/media/home1.9836de69.png",
+    "static/media/home2.a65a4256.png": "/static/media/home2.a65a4256.png",
+    "static/media/instagram-logo.b6a88fac.svg": "/static/media/instagram-logo.b6a88fac.svg",
+    "static/media/money.72da7c48.svg": "/static/media/money.72da7c48.svg",
+    "static/media/teamwork.aa71db2e.svg": "/static/media/teamwork.aa71db2e.svg",
+    "static/media/the-racer2.580f15cd.jpg": "/static/media/the-racer2.580f15cd.jpg",
+    "static/media/theracer-small.51874213.png": "/static/media/theracer-small.51874213.png",
+    "static/media/twitter-logo.28db309d.svg": "/static/media/twitter-logo.28db309d.svg",
+    "static/media/youtube-logo.88aa5cf8.svg": "/static/media/youtube-logo.88aa5cf8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.753c6e37.js",
+    "static/js/2.c12e65ec.chunk.js",
+    "static/css/main.dae2ceb1.chunk.css",
+    "static/js/main.a595b186.chunk.js"
+  ]
+}
