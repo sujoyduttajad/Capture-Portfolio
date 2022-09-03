@@ -8,7 +8,7 @@ export const PricingSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #4b59f7;
+  background-color: #23d997;
 `;
 
 export const PricingWrapper = styled.div`
@@ -25,7 +25,7 @@ export const PricingWrapper = styled.div`
 `;
 
 export const PricingHeading = styled.h1`
-  color: #fff;
+  color: #1b1b1b;
   font-size: 48px;
   margin-bottom: 24px;
 `;
@@ -90,7 +90,8 @@ export const PricingCardCost = styled.h4`
 
 export const PricingCardLength = styled.p`
   font-size: 14px;
-  margin-bottom: 24px;
+  padding: 1rem;
+  /* margin-bottom: 24px; */
 `;
 
 export const PricingCardFeatures = styled.ul`
@@ -99,7 +100,7 @@ export const PricingCardFeatures = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #a9b3c1;
+  color: #f7f7f7;
 `;
 
 export const PricingCardFeature = styled.li`
@@ -111,10 +112,9 @@ const SubsAndPacks = () => {
       <PricingWrapper>
         <PricingHeading>Our Services</PricingHeading>
         <PricingContainer>
-          <PricingCard to="/sign-up">
+          <PricingCard>
             <PricingCardInfo>
               <PricingCardIcon>
-                {/* <GiRock /> */}
               </PricingCardIcon>
               <PricingCardPlan>Starter Pack</PricingCardPlan>
               <PricingCardCost>$99.99</PricingCardCost>
@@ -124,13 +124,12 @@ const SubsAndPacks = () => {
                 <PricingCardFeature>$10,000 Budget</PricingCardFeature>
                 <PricingCardFeature>Retargeting analytics</PricingCardFeature>
               </PricingCardFeatures>
-              <button primary>Choose Plan</button>
+              <button>Choose Plan</button>
             </PricingCardInfo>
           </PricingCard>
-          <PricingCard to="/sign-up">
+          <PricingCard>
             <PricingCardInfo>
               <PricingCardIcon>
-                {/* <GiCrystalBars /> */}
               </PricingCardIcon>
               <PricingCardPlan>Gold Rush</PricingCardPlan>
               <PricingCardCost>$299.99</PricingCardCost>
@@ -140,13 +139,12 @@ const SubsAndPacks = () => {
                 <PricingCardFeature>$50,000 Budget</PricingCardFeature>
                 <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
               </PricingCardFeatures>
-              <button primary>Choose Plan</button>
+              <button>Choose Plan</button>
             </PricingCardInfo>
           </PricingCard>
-          <PricingCard to="/sign-up">
+          <PricingCard>
             <PricingCardInfo>
               <PricingCardIcon>
-                {/* <GiCutDiamond /> */}
               </PricingCardIcon>
               <PricingCardPlan>Diamond Kings</PricingCardPlan>
               <PricingCardCost>$999.99</PricingCardCost>
@@ -156,7 +154,7 @@ const SubsAndPacks = () => {
                 <PricingCardFeature>Unlimited Budget</PricingCardFeature>
                 <PricingCardFeature>24/7 Support</PricingCardFeature>
               </PricingCardFeatures>
-              <button primary>Choose Plan</button>
+              <button>Choose Plan</button>
             </PricingCardInfo>
           </PricingCard>
         </PricingContainer>
