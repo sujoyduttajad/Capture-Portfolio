@@ -25,6 +25,10 @@ const Navbar = styled.nav`
       color: #23d997;
     }
   }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    padding: 2rem;
+  }
   /* Mobile devices iPhone, Pixel */
   @media only screen and (min-width: 320px) and (max-width: 539px) {
     display: none;
