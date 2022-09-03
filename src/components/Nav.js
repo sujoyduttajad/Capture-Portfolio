@@ -136,12 +136,18 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink className="styled-link" to="/subspack">
+              Subscriptions
+            </NavLink>
+          </li>
+          <li>
             <NavLink className="styled-link" to="/contact">
               Contact Us
             </NavLink>
           </li>
         </ul>
       </Navbar>
+      {/* Mobile responsive sidebar opens up on mobile devices */}
       <NavbarMobile>
         <h1>
           <NavLink id="logo" to="/">
