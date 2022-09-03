@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const PricingSection = styled.div`
   padding: 100px 0 160px;
@@ -9,6 +9,14 @@ export const PricingSection = styled.div`
   justify-content: center;
   background-color: #23d997;
   height: 90vh;
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    height: 100%;
+  }
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    height: 100%;
+  }
 `;
 
 export const PricingWrapper = styled.div`
@@ -28,17 +36,25 @@ export const PricingHeading = styled.h1`
   color: #1b1b1b;
   font-size: 48px;
   margin-bottom: 24px;
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `;
 
 export const PricingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 960px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    flex-wrap: wrap;
     width: 100%;
   }
 `;
@@ -58,10 +74,24 @@ export const PricingCard = styled(motion.div)`
     transition: all 0.3s ease-out;
     color: #1c2237;
   }
-  @media screen and (max-width: 960px) {
-    width: 90%;
+  /* Kindel and iPad tablet  */
+  @media only screen and (min-width: 540px) and (max-width: 820px) {
+    width: 90vw;
     &:hover {
       transform: none;
+    }
+    &:nth-child(2) {
+      margin: 24px 0;
+    }
+  }
+  /* Mobile devices iPhone, Pixel */
+  @media only screen and (min-width: 320px) and (max-width: 539px) {
+    width: 90vw;
+    &:hover {
+      transform: none;
+    }
+    &:nth-child(2) {
+      margin: 24px 0;
     }
   }
 `;
@@ -109,12 +139,11 @@ const SubsAndPacks = () => {
   return (
     <PricingSection>
       <PricingWrapper>
-        <PricingHeading>Our Subscriptions</PricingHeading>
+        <PricingHeading>Subscriptions & Packages</PricingHeading>
         <PricingContainer>
           <PricingCard>
             <PricingCardInfo>
-              <PricingCardIcon>
-              </PricingCardIcon>
+              <PricingCardIcon></PricingCardIcon>
               <PricingCardPlan>Starter Pack</PricingCardPlan>
               <PricingCardCost>$99.99</PricingCardCost>
               <PricingCardLength>per month</PricingCardLength>
@@ -128,8 +157,7 @@ const SubsAndPacks = () => {
           </PricingCard>
           <PricingCard>
             <PricingCardInfo>
-              <PricingCardIcon>
-              </PricingCardIcon>
+              <PricingCardIcon></PricingCardIcon>
               <PricingCardPlan>Gold Rush</PricingCardPlan>
               <PricingCardCost>$299.99</PricingCardCost>
               <PricingCardLength>per month</PricingCardLength>
@@ -143,8 +171,7 @@ const SubsAndPacks = () => {
           </PricingCard>
           <PricingCard>
             <PricingCardInfo>
-              <PricingCardIcon>
-              </PricingCardIcon>
+              <PricingCardIcon></PricingCardIcon>
               <PricingCardPlan>Diamond Kings</PricingCardPlan>
               <PricingCardCost>$999.99</PricingCardCost>
               <PricingCardLength>per month</PricingCardLength>
