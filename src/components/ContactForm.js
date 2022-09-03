@@ -74,6 +74,9 @@ const FormContainer = styled.form`
     padding: 0.8rem 1rem;
     border-radius: 5.55px;
     margin-top: 2rem;
+    &:active, &:hover {
+      outline: 4px solid #f7f7f7;
+    }
   }
   input,
   textarea {
