@@ -187,6 +187,9 @@ const Newsletter = styled(motion.div)`
     color: #1b1b1b;
     padding: 0.8rem 1rem;
     border-radius: 7px;
+    &:active, &:hover {
+      outline: 3px solid #282828;
+    }
   }
   input {
     font-family: inherit;
