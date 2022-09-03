@@ -76,12 +76,8 @@ export const PricingCard = styled(motion.div)`
   }
   /* Kindel and iPad tablet  */
   @media only screen and (min-width: 540px) and (max-width: 820px) {
-    width: 90vw;
     &:hover {
       transform: none;
-    }
-    &:nth-child(2) {
-      margin: 24px 0;
     }
   }
   /* Mobile devices iPhone, Pixel */
