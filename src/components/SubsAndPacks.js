@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const PricingSection = styled.div`
@@ -9,6 +8,7 @@ export const PricingSection = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: #23d997;
+  height: 90vh;
 `;
 
 export const PricingWrapper = styled.div`
@@ -91,7 +91,6 @@ export const PricingCardCost = styled.h4`
 export const PricingCardLength = styled.p`
   font-size: 14px;
   padding: 1rem;
-  /* margin-bottom: 24px; */
 `;
 
 export const PricingCardFeatures = styled.ul`
@@ -110,7 +109,7 @@ const SubsAndPacks = () => {
   return (
     <PricingSection>
       <PricingWrapper>
-        <PricingHeading>Our Services</PricingHeading>
+        <PricingHeading>Our Subscriptions</PricingHeading>
         <PricingContainer>
           <PricingCard>
             <PricingCardInfo>
