@@ -74,7 +74,8 @@ const FormContainer = styled.form`
     padding: 0.8rem 1rem;
     border-radius: 5.55px;
     margin-top: 2rem;
-    &:active, &:hover {
+    &:active,
+    &:hover {
       outline: 4px solid #f7f7f7;
     }
   }
@@ -130,11 +131,23 @@ const ContactForm = () => {
         </Hide>
       </FormTitle>
       <FormContainer>
-        <label> Your name </label>
-        <input name="Full Name" type="text" placeholder="John Doe" />
+        <label> Your name <span>&#42;</span></label>
+        <input
+          name="Full Name"
+          type="text"
+          placeholder="John Doe"
+          required
+          aria-required
+        />
 
-        <label> Your email</label>
-        <input name="Your Email" type="email" placeholder="johndoe@xyz.com" />
+        <label> Your email <span>&#42;</span></label>
+        <input
+          name="Your Email"
+          type="email"
+          placeholder="johndoe@xyz.com"
+          required
+          aria-required
+        />
 
         <label> Your Interests</label>
         <input name="Interest" type="text" placeholder="Photography" />
