@@ -2,6 +2,13 @@
 
 A business landing page template built with react to showcase a company's portfolio highlighting it's Products and Services.
 
+Tools and Technologies I have used - 
+- React
+- React router dom
+- [Framer-motion](https://www.framer.com/motion/)
+- Styled Components
+- react-intersection-observer
+
 This website has four pages(or routes) 
 
 - **About Us** - Initial page which answers what and why the company exists
@@ -10,13 +17,20 @@ This website has four pages(or routes)
 - **Contact Us** - An interactive way to communicate
 
 All the the components and contents are customizable and responsive. 
-Anybody can use this template for the portfolio
+
+**Anybody can use this template for the portfolio**
 
 <img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
 # Framer Motion
 
-I have used a few Framer motion features to perform some cool animation across the app
+I have used a few Framer motion features to perform some cool animation across the app. The Framer motion for developers has all the cool references and Components you need to know about 
+
+[Framer-motion-developers](https://www.framer.com/developers/)
+
+
+For the Documentation refer to [this link](https://www.framer.com/docs/)
+
 ## Framer motion features
 ### AnimatePresence
 
