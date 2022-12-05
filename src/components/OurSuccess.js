@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ const Video = styled(motion.video)`
 const Content = styled.div`
   position: absolute;
   display: inline-block;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   top: 50%;
   left: 50%;
   color: #fff;
@@ -32,10 +32,21 @@ const Play = styled.div`
 `;
 
 const OurSuccess = () => {
+  const [toggle, setToggle] = useState(false);
+
   const videoRef = useRef();
-  const playVideo = () => {
-    videoRef.current.play();
+
+  const clickPlayVideo = () => {
+    if(!toggle) {
+      videoRef.current.play();
+      setToggle(!toggle);
+    } else {
+      videoRef.current.pause();
+      setToggle(!toggle);
+    }
   };
+
+
 
   return (
     <VideoContainer>
@@ -60,7 +71,7 @@ const OurSuccess = () => {
         Sorry, your browser doesn't support embedded videos.
       </Video>
       <Content>
-        <Play onClick={playVideo}>►</Play>
+        <Play onClick={clickPlayVideo}>►</Play>
       </Content>
     </VideoContainer>
   );
