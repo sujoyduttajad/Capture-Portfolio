@@ -14,21 +14,27 @@ const Video = styled(motion.video)`
 const Content = styled.div`
   position: absolute;
   display: inline-block;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -10%);
   top: 50%;
   left: 50%;
   color: #fff;
   width: 100%;
   text-align: center;
   z-index: 999;
+  cursor: pointer;
+  
 `;
 const Play = styled.div`
-  font-size: 50px;
+  font-size: 5em;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: none;
+  outline: none;
+  user-select: none;
   display: inline-block;
   text-align: center;
-  padding: 5px 25px;
+  border-radius: 50%;
+  background-color: rgba(33, 37, 41, 0.5);
+  padding: 0.3em 0.3em 0.3em 0.5em;
 `;
 
 const OurSuccess = () => {
