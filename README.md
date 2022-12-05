@@ -53,7 +53,7 @@ Thus, in the Switch component we need two things to add as props -
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
-## AnimateSharedLayout
+### AnimateSharedLayout
 
 The AnimateSharedLayout component enables you to perform layout animations:
 
@@ -73,9 +73,9 @@ However, if a layout component changes layout due to local state change, surroun
 
 [For More information, click here](https://www.framer.com/docs/animate-shared-layout/)
 
-### Usage
+#### Usage
 
-## Colors
+# Colors
 
 - green color: `#23d997` (Caribbean Green)
 - white color: 
@@ -92,7 +92,7 @@ However, if a layout component changes layout due to local state change, surroun
   - background-color: `#8effa0`
 
 
-## FAQ Accordion
+# FAQ Accordion
 
 Well the accordion works quite good with framer-motion animation but I wanted to provide a close/open icon for better useability/accessbility so decided to use a cross and plus icon which incorporated framer-motion animation.
 
@@ -102,7 +102,7 @@ Came across this codesandbox resource
 - [Framer Rotate tutorial](https://www.youtube.com/watch?v=ILxNdOtKbNQ&t=368s)
 - [Quick Animation resource ](https://pavanjadhaw.me/blog/animate-svg-using-framer-motion)
 
-### To rotate an SVG using Framer-motion -
+### How to rotate an SVG using Framer-motion -
 
 So I created this accordion and thought it would be great addition if I can show the user some animation when accordion is closed or opened. 
 
