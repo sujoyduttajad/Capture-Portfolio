@@ -32,7 +32,7 @@ export const MyComponent = ({ isVisible }) => (
 );
 ```
 
-#### Usage
+#### Usage in the App
 
 In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
 
@@ -66,8 +66,6 @@ motion components with a layout prop will automatically animate layout changes t
 ```javascript
 <motion.div layout />
 ```
-
-However, if a layout component changes layout due to local state change, surrounding components need a way to know they should animate their layout, too.
 
 [For More information, click here](https://www.framer.com/docs/animate-shared-layout/)
 
