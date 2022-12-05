@@ -1,12 +1,15 @@
 # Capture Portfolio
 
-A landing page built with react to showcase company's portfolio highlighting it's Products and Services
+A landing page template built with react to showcase company's portfolio highlighting it's Products and Services
 
 [Live Demo](https://capture-group-a67f88.netlify.app/)
 
 <img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
-## AnimatePresence
+# Framer Motion
+
+## Framer motion features
+### AnimatePresence
 
 AnimatePresence allows components to animate out when they're removed from the React tree.
 
@@ -31,7 +34,7 @@ export const MyComponent = ({ isVisible }) => (
 );
 ```
 
-### Usage
+#### Usage
 
 In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
 
