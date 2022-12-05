@@ -73,7 +73,7 @@ const OurSuccess = () => {
         loop
         preload="metadata"
         onMouseOver={() => setVisible(true)}
-        onMouseLeave={() => setVisible(false)}
+        onMouseOut={() => setVisible(false)}
         onMouse
       >
         <source
@@ -82,7 +82,7 @@ const OurSuccess = () => {
         />
         Sorry, your browser doesn't support embedded videos.
       </Video>
-      {visible && (
+      {/* {visible && ( */}
         <Content>
           {!toggle ? (
             <Play onClick={clickPlayVideo}>
@@ -94,7 +94,7 @@ const OurSuccess = () => {
             </Play>
           )}
         </Content>
-      )}
+      {/* )} */}
     </VideoContainer>
   );
 };
