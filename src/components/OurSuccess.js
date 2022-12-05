@@ -10,7 +10,7 @@ const VideoContainer = styled.div`
   position: relative;
   display: inline-block;
 `;
-const Video = styled(motion.video)``;
+const Video = styled.video``;
 
 const Content = styled.div`
   position: absolute;
@@ -43,6 +43,7 @@ const Play = styled.div`
 
 const OurSuccess = () => {
   const [toggle, setToggle] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const videoRef = useRef();
 
@@ -71,6 +72,9 @@ const OurSuccess = () => {
         disableRemotePlayback
         loop
         preload="metadata"
+        onMouseOver={() => setVisible(true)}
+        onMouseLeave={() => setVisible(false)}
+        onMouse
       >
         <source
           src="https://player.vimeo.com/external/524033439.hd.mp4?s=22f1a7abade536bc83845b40d3181c97b8229d8d&profile_id=175"
@@ -78,17 +82,19 @@ const OurSuccess = () => {
         />
         Sorry, your browser doesn't support embedded videos.
       </Video>
-      <Content>
-        {!toggle ? (
-          <Play onClick={clickPlayVideo}>
-            <img src={PlayButton} alt="Play button" />
-          </Play>
-        ) : (
-          <Play onClick={clickPlayVideo}>
-            <img src={PauseButton} alt="Pause button" />
-          </Play>
-        )}
-      </Content>
+      {visible && (
+        <Content>
+          {!toggle ? (
+            <Play onClick={clickPlayVideo}>
+              <img src={PlayButton} alt="Play button" />
+            </Play>
+          ) : (
+            <Play onClick={clickPlayVideo}>
+              <img src={PauseButton} alt="Pause button" />
+            </Play>
+          )}
+        </Content>
+      )}
     </VideoContainer>
   );
 };
