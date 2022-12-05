@@ -1,11 +1,19 @@
 # Capture Portfolio
 
-A landing page template built with react to showcase company's portfolio highlighting it's Products and Services
+A business landing page template built with react to showcase a company's portfolio highlighting it's Products and Services.
+
+This website has four pages(or routes) 
+
+- About Us - Initial page which answers what and why the company exists
+- Our Work - Showcases the business experience and proof of work
+- Subscriptions - What services the company provides at what cost
+- Contact Us - An interactive way to communicate
 
 <img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
 # Framer Motion
 
+I have used a few Framer motion features to perform some cool animation across the app
 ## Framer motion features
 ### AnimatePresence
 
@@ -34,7 +42,7 @@ export const MyComponent = ({ isVisible }) => (
 
 #### Usage in the App
 
-In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
+Here, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
 
 AnimatePresence requires a key(pathname), which essentially will let it know that the user is on another page and it should start animating.
 
@@ -69,7 +77,9 @@ motion components with a layout prop will automatically animate layout changes t
 
 [For More information, click here](https://www.framer.com/docs/animate-shared-layout/)
 
-#### Usage
+#### Usage in the App
+
+I used the 
 
 # Colors
 
