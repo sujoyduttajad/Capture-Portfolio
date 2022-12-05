@@ -1,12 +1,13 @@
 # Capture Portfolio
 
-A landing page built with react to showcase company's portfolio highlighting it's Products and Services
-
-[Live Demo](https://capture-group-a67f88.netlify.app/)
+A landing page template built with react to showcase company's portfolio highlighting it's Products and Services
 
 <img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
-## AnimatePresence
+# Framer Motion
+
+## Framer motion features
+### AnimatePresence
 
 AnimatePresence allows components to animate out when they're removed from the React tree.
 
@@ -31,7 +32,7 @@ export const MyComponent = ({ isVisible }) => (
 );
 ```
 
-### Usage
+#### Usage
 
 In our case, AnimatePresence will only work when we let 'framer-motion' know that user is transitioning to another page. That's where we need to use the useLocation hook from 'react-router-dom'.
 
@@ -50,7 +51,7 @@ Thus, in the Switch component we need two things to add as props -
 
 [For More information, click here](https://www.framer.com/docs/animate-presence/)
 
-## AnimateSharedLayout
+### AnimateSharedLayout
 
 The AnimateSharedLayout component enables you to perform layout animations:
 
@@ -70,26 +71,26 @@ However, if a layout component changes layout due to local state change, surroun
 
 [For More information, click here](https://www.framer.com/docs/animate-shared-layout/)
 
-### Usage
+#### Usage
 
-## Colors
+# Colors
 
-- green color: `#23d997` (Caribbean Green)
-- white color: 
+- Primary green color: `#23d997` (Caribbean Green)
+- Secondary white color: 
     1. `#ffffff`
     2. `f7f7f7`
-- black color: 
+- Secondary black color: 
     1. `#1b1b1b` (Eerie Black)
     2. `#353535` (Jet Black)
     3. `#282828`
-- gray color: `#CCC` (Light Gray)
+- Secondary gray color: `#CCC` (Light Gray)
 - Frame colors 
   - background-color: `#ff8efb`
   - background-color: `#8ed2ff`
   - background-color: `#8effa0`
 
 
-## FAQ Accordion
+# FAQ Accordion
 
 Well the accordion works quite good with framer-motion animation but I wanted to provide a close/open icon for better useability/accessbility so decided to use a cross and plus icon which incorporated framer-motion animation.
 
@@ -99,9 +100,9 @@ Came across this codesandbox resource
 - [Framer Rotate tutorial](https://www.youtube.com/watch?v=ILxNdOtKbNQ&t=368s)
 - [Quick Animation resource ](https://pavanjadhaw.me/blog/animate-svg-using-framer-motion)
 
-### To rotate an SVG using Framer-motion -
+### How to rotate an SVG using Framer-motion -
 
-So I created this accordion and thought it would be great addition if I can show the user some animation when accordion is closed or opened. 
+So I created this accordion and thought it would be great if I can show the user that the arrow to expand the Accordion rotates smoothly when accordion is closed or opened. 
 
 
 To create such animation on event all you need to do is to create a variant with hidden and visible prop
@@ -136,7 +137,7 @@ Here, ```toggle``` is the state
   </motion.svg>
 ```
 
-## Case Study
+# Case Study
 
 These are the designs that were particularly fascinating to me and I took inspiration from these
 
