@@ -139,7 +139,7 @@ Here, ```toggle``` is the state
   </motion.svg>
 ```
 
-## Case Study
+# Case Study
 
 These are the designs that were particularly fascinating to me and I took inspiration from these
 
