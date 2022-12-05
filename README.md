@@ -96,7 +96,17 @@ motion components with a layout prop will automatically animate layout changes t
 
 #### Usage in the App
 
-I used the 
+I used in the FAQ section as wrapper to another component named Toggle that performs the motion animations
+
+```javascript
+    <AnimateSharedLayout>
+      <Toggle title="How Do I Start?">
+        <div className="answer">
+          ...
+        </div>
+      </Toggle>
+    </AnimateSharedLayout>
+```
 
 # Colors
 
