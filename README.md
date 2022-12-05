@@ -2,6 +2,7 @@
 
 A landing page built with react to showcase company's portfolio highlighting it's Products and Services
 
+[Live Demo](https://capture-group-a67f88.netlify.app/)
 
 <img src="./Capture Portfolio.png" alt="the screenshot of the home page"/>
 
