@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
@@ -9,11 +9,6 @@ const VideoContainer = styled.div`
   display: inline-block;
 `;
 const Video = styled(motion.video)`
-  -webkit-filter: blur(7px);
-  -o-filter: blur(7px);
-  -moz-filter: blur(7px);
-  -ms-filter: blur(7px);
-  filter: blur(7px);
 `;
 
 const Content = styled.div`
@@ -37,6 +32,11 @@ const Play = styled.div`
 `;
 
 const OurSuccess = () => {
+  const videoRef = useRef();
+  const playVideo = () => {
+    videoRef.current.play();
+  };
+
   return (
     <VideoContainer>
       <Description>
@@ -45,8 +45,9 @@ const OurSuccess = () => {
         </h2>
       </Description>
       <Video
+        ref={videoRef}
         width="100%"
-        autoPlay
+        autoPlay={false}
         disablePictureInPicture
         disableRemotePlayback
         loop
@@ -59,7 +60,7 @@ const OurSuccess = () => {
         Sorry, your browser doesn't support embedded videos.
       </Video>
       <Content>
-        <Play>►</Play>
+        <Play onClick={playVideo}>►</Play>
       </Content>
     </VideoContainer>
   );
