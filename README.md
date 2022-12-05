@@ -104,7 +104,7 @@ Came across this codesandbox resource
 
 ### How to rotate an SVG using Framer-motion -
 
-So I created this accordion and thought it would be great addition if I can show the user some animation when accordion is closed or opened. 
+So I created this accordion and thought it would be great if I can show the user that the arrow to expand the Accordion rotates smoothly when accordion is closed or opened. 
 
 
 To create such animation on event all you need to do is to create a variant with hidden and visible prop
