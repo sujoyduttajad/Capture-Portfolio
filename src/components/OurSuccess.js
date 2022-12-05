@@ -3,13 +3,14 @@ import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
 import { Description } from "../styles";
+import PlayButton from "../img/play-button.svg";
+import PauseButton from "../img/video-pause.svg";
 
 const VideoContainer = styled.div`
   position: relative;
   display: inline-block;
 `;
-const Video = styled(motion.video)`
-`;
+const Video = styled(motion.video)``;
 
 const Content = styled.div`
   position: absolute;
@@ -22,7 +23,6 @@ const Content = styled.div`
   text-align: center;
   z-index: 999;
   cursor: pointer;
-  
 `;
 const Play = styled.div`
   font-size: 5em;
@@ -34,7 +34,11 @@ const Play = styled.div`
   text-align: center;
   border-radius: 50%;
   background-color: rgba(33, 37, 41, 0.5);
-  padding: 0.3em 0.3em 0.3em 0.5em;
+  padding: 0.5em 0.5em 0.2em 0.5em;
+  img {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const OurSuccess = () => {
@@ -43,7 +47,7 @@ const OurSuccess = () => {
   const videoRef = useRef();
 
   const clickPlayVideo = () => {
-    if(!toggle) {
+    if (!toggle) {
       videoRef.current.play();
       setToggle(!toggle);
     } else {
@@ -51,8 +55,6 @@ const OurSuccess = () => {
       setToggle(!toggle);
     }
   };
-
-
 
   return (
     <VideoContainer>
@@ -77,7 +79,15 @@ const OurSuccess = () => {
         Sorry, your browser doesn't support embedded videos.
       </Video>
       <Content>
-        <Play onClick={clickPlayVideo}>►</Play>
+        {!toggle ? (
+          <Play onClick={clickPlayVideo}>
+            <img src={PlayButton} alt="Play button" />
+          </Play>
+        ) : (
+          <Play onClick={clickPlayVideo}>
+            <img src={PauseButton} alt="Pause button" />
+          </Play>
+        )}
       </Content>
     </VideoContainer>
   );
