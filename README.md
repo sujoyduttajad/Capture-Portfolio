@@ -4,7 +4,7 @@ A business landing page template built with react to showcase a company's portfo
 
 This website has four pages(or routes) 
 
-- About Us - Initial page which answers what and why the company exists
+- ##About Us - Initial page which answers what and why the company exists
 - Our Work - Showcases the business experience and proof of work
 - Subscriptions - What services the company provides at what cost
 - Contact Us - An interactive way to communicate
