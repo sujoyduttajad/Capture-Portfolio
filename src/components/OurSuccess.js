@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 // Animations
-import { motion } from "framer-motion";
 import { Description } from "../styles";
 import PlayButton from "../img/play-button.svg";
 import PauseButton from "../img/video-pause.svg";
